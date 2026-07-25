@@ -1,2 +1,1 @@
-# bali-tripbook
-Bali itinerary 
+# Tripbook Lite v0.1
