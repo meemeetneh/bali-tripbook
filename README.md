@@ -1,17 +1,13 @@
-# Bali Tripbook Lite v0.2
+# Bali Tripbook Lite v0.3
 
-Upload the contents of this folder to the repository root.
+This release restores the previously approved Tripbook home interface.
 
-Included:
-- Home
-- Places and filters
-- Itinerary starter
-- Saved picks using browser storage
-- Hotels
-- Flights
-- Travel documents
-- Packing list
-- Emergency
-- Settings
-- About
-- Responsive navigation and side menu
+## Upload to GitHub
+Unzip this package and upload/replace the files in the repository root:
+
+- index.html
+- sensorium.jpg
+- .nojekyll
+- README.md
+
+Do not upload the outer ZIP file itself.
