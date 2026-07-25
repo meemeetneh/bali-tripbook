@@ -1,1 +1,80 @@
-<!doctype html><html><head><meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'><title>Tripbook Lite</title><link rel='stylesheet' href='assets/css/style.css'></head><body><h1>Bali Tripbook</h1><script src='assets/js/main.js'></script></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#fff8f4">
+<title>Bali Tripbook</title>
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<div class="app">
+<header class="topbar">
+<button id="menuBtn" class="icon-btn" aria-label="Open menu">☰</button>
+<div><strong>Bali Tripbook</strong><small>31 Jul–4 Aug 2026</small></div>
+<span class="avatar">BT</span>
+</header>
+<main>
+<section class="page active" data-page="home">
+<div class="hero">
+<p class="eyebrow">Your Bali escape</p>
+<h1>Canggu to Uluwatu</h1>
+<p>2 adults · 5 days · Scooter</p>
+<div class="day-count"><b>5</b><span>days</span></div>
+</div>
+<section class="section"><div class="section-head"><div><p class="eyebrow">Coming up</p><h2>Trip overview</h2></div></div>
+<div class="summary-grid">
+<article class="summary"><span>🏡</span><div><small>First stay</small><b>Anasera Villas</b><em>Echo Beach, Canggu</em></div></article>
+<article class="summary"><span>✈️</span><div><small>Arrival</small><b>Airport pickup</b><em>Free taxi to villa</em></div></article>
+</div></section>
+<section class="section"><div class="section-head"><div><p class="eyebrow">Explore</p><h2>Quick access</h2></div></div>
+<div class="quick-grid">
+<button data-go="places"><span>📍</span><b>Nearby places</b><small>Food, yoga and spa</small></button>
+<button data-go="itinerary"><span>🗓️</span><b>Itinerary</b><small>Day-by-day plan</small></button>
+<button data-go="picks"><span>♡</span><b>My Picks</b><small>Your shortlist</small></button>
+<button data-go="flights"><span>✈️</span><b>Flights</b><small>Travel details</small></button>
+</div></section>
+<section class="section"><div class="section-head"><div><p class="eyebrow">Shortlisted</p><h2>Near your villa</h2></div><button class="link-btn" data-go="places">View all</button></div>
+<div class="list">
+<article><span class="thumb food">☕</span><div><b>Breakfast & brunch</b><small>Curated options within 3 km</small></div><i>›</i></article>
+<article><span class="thumb yoga">🧘</span><div><b>Calm beginner yoga</b><small>Meditative and authentic atmosphere</small></div><i>›</i></article>
+<article><span class="thumb spa">🌿</span><div><b>Spa & massage</b><small>Nearby wellness shortlist</small></div><i>›</i></article>
+</div></section>
+</section>
+
+<section class="page" data-page="places">
+<div class="title"><p class="eyebrow">Shortlisted for you</p><h1>Places</h1><p>Nearby recommendations around your villa.</p></div>
+<div class="filters"><button class="active" data-filter="all">All</button><button data-filter="food">Food</button><button data-filter="yoga">Yoga</button><button data-filter="spa">Spa</button></div>
+<div class="cards">
+<article class="place-card" data-category="food"><div class="cover food-cover">Brunch</div><div class="place-body"><div><small>Food · within 3 km</small><h3>Breakfast & brunch shortlist</h3><p>Relaxed cafés and well-reviewed morning options near the villa.</p></div><button class="save">♡</button></div></article>
+<article class="place-card" data-category="yoga"><div class="cover yoga-cover">Yoga</div><div class="place-body"><div><small>Beginner friendly</small><h3>Calm yoga experience</h3><p>Gentle classes, meditation and traditional ambience without pop music.</p></div><button class="save">♡</button></div></article>
+<article class="place-card" data-category="spa"><div class="cover spa-cover">Wellness</div><div class="place-body"><div><small>Spa · nearby</small><h3>Massage & wellness shortlist</h3><p>Convenient options around the villa for a relaxing treatment.</p></div><button class="save">♡</button></div></article>
+</div>
+</section>
+
+<section class="page" data-page="itinerary"><div class="title"><p class="eyebrow">31 Jul–4 Aug</p><h1>Itinerary</h1><p>The detailed schedule will be added after your final selections.</p></div>
+<div class="timeline">
+<article><span>31</span><div><small>Friday · Canggu</small><h3>Arrival and villa check-in</h3><p>Airport pickup, settle in and keep the evening flexible.</p></div></article>
+<article><span>01</span><div><small>Saturday · Canggu</small><h3>Explore nearby favourites</h3><p>Breakfast, beach area, gentle yoga or spa.</p></div></article>
+<article><span>02</span><div><small>Sunday · Canggu → Uluwatu</small><h3>Check out and transfer</h3><p>Check out at 2 PM, travel south and check in.</p></div></article>
+<article><span>03</span><div><small>Monday · Uluwatu</small><h3>Open planning day</h3><p>Final itinerary details to be confirmed.</p></div></article>
+<article><span>04</span><div><small>Tuesday · Departure</small><h3>Return to Malaysia</h3><p>Allow enough time for airport transfer and check-in.</p></div></article>
+</div></section>
+
+<section class="page" data-page="picks"><div class="title"><p class="eyebrow">Saved shortlist</p><h1>My Picks</h1><p>Tap the heart on any place to save it here.</p></div><div id="empty" class="empty"><span>♡</span><h2>No saved places yet</h2><p>Your favourite cafés, yoga studios and spas will appear here.</p><button data-go="places">Explore places</button></div><div id="saved" class="cards"></div></section>
+
+<section class="page utility" data-page="hotels"><div class="title"><p class="eyebrow">Accommodation</p><h1>Hotels</h1></div><div class="info"><small>Canggu stay</small><h2>Anasera Villas Echo Beach</h2><p>31 Jul–2 Aug 2026 · 2 adults</p><b class="status">Confirmed stay</b></div><div class="info muted"><small>Uluwatu stay</small><h2>Details pending</h2><p>Add the confirmed hotel once selected.</p></div></section>
+<section class="page utility" data-page="flights"><div class="title"><p class="eyebrow">Travel</p><h1>Flights</h1></div><div class="info"><small>Arrival</small><h2>Malaysia → Bali</h2><p>Flight screenshots received. Exact details will be added in the next content update.</p></div><div class="info"><small>Airport transfer</small><h2>Free taxi pickup</h2><p>Airport to villa transfer is included.</p><b class="status">Included</b></div></section>
+<section class="page utility" data-page="documents"><div class="title"><p class="eyebrow">Important</p><h1>Travel Documents</h1></div><div class="checks"><label><input type="checkbox"> Passport</label><label><input type="checkbox"> Flight booking</label><label><input type="checkbox"> Accommodation confirmation</label><label><input type="checkbox"> Immigration / entry documents</label><label><input type="checkbox"> Travel insurance</label></div></section>
+<section class="page utility" data-page="packing"><div class="title"><p class="eyebrow">Before you go</p><h1>Packing List</h1></div><div class="checks"><label><input type="checkbox"> Passport and wallet</label><label><input type="checkbox"> Lightweight clothes</label><label><input type="checkbox"> Swimwear</label><label><input type="checkbox"> Sunscreen</label><label><input type="checkbox"> Phone charger and power bank</label><label><input type="checkbox"> Yoga clothes</label></div></section>
+<section class="page utility" data-page="emergency"><div class="title"><p class="eyebrow">Keep accessible</p><h1>Emergency</h1></div><div class="info"><small>General emergency</small><h2>112</h2><p>Verify local services when you arrive.</p></div><div class="info muted"><small>Personal contacts</small><h2>Add your contacts</h2><p>Villa, travel mate, insurer and Malaysia emergency contact.</p></div></section>
+<section class="page utility" data-page="settings"><div class="title"><p class="eyebrow">Tripbook</p><h1>Settings</h1></div><div class="settings"><div><span>Trip name</span><b>Bali Tripbook</b></div><div><span>Travel dates</span><b>31 Jul–4 Aug 2026</b></div><div><span>Travellers</span><b>2 adults</b></div></div></section>
+<section class="page utility" data-page="about"><div class="title"><p class="eyebrow">Version 0.2</p><h1>About</h1></div><div class="info"><h2>Tripbook Lite</h2><p>A lightweight, mobile-first Bali travel companion built for GitHub Pages.</p></div></section>
+</main>
+<nav class="bottom"><button class="active" data-go="home"><span>⌂</span><small>Home</small></button><button data-go="places"><span>⌖</span><small>Places</small></button><button data-go="itinerary"><span>▣</span><small>Itinerary</small></button><button data-go="picks"><span>♡</span><small>My Picks</small></button></nav>
+</div>
+<div id="shade" class="shade"></div>
+<aside id="drawer" class="drawer"><div class="drawer-head"><div><small>Bali Tripbook</small><b>Trip menu</b></div><button id="closeBtn">×</button></div><nav><button data-go="hotels">🏨 Hotels</button><button data-go="flights">✈️ Flights</button><button data-go="packing">🎒 Packing List</button><button data-go="emergency">＋ Emergency</button><button data-go="documents">▤ Travel Documents</button><button data-go="settings">⚙ Settings</button><button data-go="about">ⓘ About</button></nav></aside>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
