@@ -1,5 +1,9 @@
 # Changelog
 
+## v0.6.17 — 2026-07-29
+
+- Added Hatch Uluwatu’s Sunday Market and nightlife as separate interested options with current operating-time notes, event links and Instagram.
+
 ## v0.6.16 — 2026-07-29
 
 - Added verified official website or Instagram links to all identified user-supplied places.
