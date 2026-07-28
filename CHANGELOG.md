@@ -1,5 +1,9 @@
 # Changelog
 
+## v0.6.30 — 2026-07-29
+
+- Completed Klive Beach Club with official deck-by-deck spending terms, a seating recommendation for two, lower-cost and premium alternatives, and high-tide guidance.
+
 ## v0.6.29 — 2026-07-29
 
 - Added Klive Beach Club as a must-go Uluwatu beach club with official menu, reservation, Instagram and Maps links.
