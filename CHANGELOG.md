@@ -1,5 +1,10 @@
 # Changelog
 
+## v0.6.16 — 2026-07-29
+
+- Added verified official website or Instagram links to all identified user-supplied places.
+- Kept Nibs Uluwatu linkless because no reliable official account or site could be confirmed.
+
 ## v0.6.15 — 2026-07-29
 
 - Added Nibs Uluwatu as an interested dessert choice, with venue details intentionally left for confirmation.
