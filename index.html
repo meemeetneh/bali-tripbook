@@ -191,7 +191,8 @@ const homeItinerary=document.getElementById('itinerary');
 const todayPlan=window.TRIPBOOK_ITINERARY?.days?.[0];
 if(homeItinerary&&todayPlan){
   const escapeHtml=value=>String(value).replace(/[&<>"']/g,char=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[char]));
-  homeItinerary.innerHTML=`<div class="section-head"><h2>Day ${todayPlan.day} plan</h2><a class="section-link" href="itinerary.html">View all</a></div><div class="timeline">${todayPlan.items.map(item=>`<div class="activity"><div class="activity-time">Plan</div><article class="activity-card home-plan-card"><div class="activity-title">${escapeHtml(item)}</div><div class="activity-sub">${escapeHtml(todayPlan.title)}</div></article></div>`).join('')}</div>`;
+  const itemDetails=window.TRIPBOOK_ITEM_DETAILS||{};
+  homeItinerary.innerHTML=`<div class="section-head"><h2>Day ${todayPlan.day} · ${escapeHtml(todayPlan.title)}</h2><a class="section-link" href="itinerary.html">View all</a></div><div class="timeline">${todayPlan.items.map(item=>{const detail=itemDetails[item]||{time:'Flexible',title:item,description:todayPlan.title};return `<div class="activity"><div class="activity-time">${escapeHtml(detail.time)}</div><article class="activity-card home-plan-card"><div class="activity-title">${escapeHtml(detail.title)}</div><div class="activity-sub">${escapeHtml(detail.description)}</div></article></div>`}).join('')}</div>`;
 }
 document.querySelectorAll('.activity-card > button').forEach(btn=>btn.addEventListener('click',()=>btn.parentElement.classList.toggle('expanded')));
 document.querySelectorAll('.explore-item').forEach(btn=>btn.addEventListener('click',()=>location.href='places.html'));

@@ -1,5 +1,9 @@
 # Changelog
 
+## v0.6.37 — 2026-07-29
+
+- Reworked the Home and full Itinerary timelines with meaningful times, individual titles and specific descriptions for every trip stop.
+
 ## v0.6.36 — 2026-07-29
 
 - Added Marissa Spa Canggu as the lower-cost massage and spa alternative, with branch, WhatsApp, website, Instagram and value-planning details.
