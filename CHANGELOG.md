@@ -1,5 +1,10 @@
 # Changelog
 
+## v0.6.11 — 2026-07-29
+
+- Added ULU Balinese SPA Club as an interested Canggu spa with live booking, price-list, Instagram and Maps links.
+- Added a dated price survey and kept the final treatment cost explicitly subject to confirmation on the live booking page.
+
 ## v0.6.10 — 2026-07-29
 
 - Corrected Saltwood to Saltwood Uluwatu, an interested brunch or sunset-dinner option.
