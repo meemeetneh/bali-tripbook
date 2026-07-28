@@ -1,5 +1,10 @@
 # Changelog
 
+## v0.6.13 — 2026-07-29
+
+- Added Sundays Beach Club as an interested Uluwatu breakfast or brunch option, with live booking, menu, Instagram and Maps links.
+- Documented the adult IDR 800k daily-pass cost and IDR 500k food-and-drink credit separately.
+
 ## v0.6.12 — 2026-07-29
 
 - Added the verified % Arabica Bali Uluwatu branch with official website, Instagram and Maps links.
