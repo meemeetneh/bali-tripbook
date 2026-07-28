@@ -1,5 +1,10 @@
 # Changelog
 
+## v0.6.22 — 2026-07-29
+
+- Added Brunch Club Pererenan as a breakfast/brunch choice with your chicken-waffle and pancake remarks.
+- Made saved Trip remarks visible on each place page.
+
 ## v0.6.21 — 2026-07-29
 
 - Added Bohe Bali, Club Pantai and Lylyboy Bali to Shopping with the shopping notes you shared, direct Instagram links and Maps searches.
