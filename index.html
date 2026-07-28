@@ -88,8 +88,9 @@ button{cursor:pointer}
 .close-search{border:0;background:#f2f2f4;border-radius:14px;padding:0 14px;font-weight:750}
 @media (max-width:370px){.header h1{font-size:33px}.section-head h2{font-size:23px}.next-card{grid-template-columns:1fr 104px}.next-image{width:104px;height:142px}.explore-grid{gap:8px}.explore-item span{font-size:10px}}
 </style>
-  <meta name="tripbook-version" content="0.4">
+  <meta name="tripbook-version" content="0.5">
 <link rel="stylesheet" href="assets/site.css">
+<link rel="manifest" href="manifest.webmanifest">
 </head>
 <body>
 <div class="app">
@@ -105,9 +106,9 @@ button{cursor:pointer}
     <p>Fri, 31 Jul · Canggu</p>
   </header>
 
-  <main class="content">
+  <div class="install-banner" id="installBanner"><span>Add Tripbook to your Home Screen.</span><button id="installApp">Install</button></div><main class="content">
     <section class="section">
-      <div class="section-head"><h2>What’s next</h2><a class="section-link" href="#itinerary">View day</a></div>
+      <div class="section-head"><h2>What’s next</h2><a class="section-link" href="itinerary.html">View day</a></div>
       <article class="next-card">
         <div class="next-copy">
           <div class="next-label">Next stop</div>
@@ -140,7 +141,7 @@ button{cursor:pointer}
         <button class="explore-item"><div class="explore-icon"><svg viewBox="0 0 24 24"><path d="M12 21s-7-4.4-7-10a4 4 0 0 1 7-2.7A4 4 0 0 1 19 11c0 5.6-7 10-7 10Z"/></svg></div><span>Spa</span></button>
       </div>
     </section>
-  </main>
+  <section class="section"><div class="section-head"><h2>Trip tools</h2></div><div class="action-grid"><button class="share-button" data-share-trip>Share trip</button><a class="action-link" href="documents.html">Travel documents</a></div></section></main>
 
   <nav class="tabbar" aria-label="Primary navigation">
     <a class="tab active" href="index.html"><svg viewBox="0 0 24 24"><path d="m3 10 9-7 9 7v10h-6v-6H9v6H3Z"/></svg><span>Home</span></a>

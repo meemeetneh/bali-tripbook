@@ -1,12 +1,14 @@
-# Bali Tripbook Lite v0.4
+# Bali Tripbook Lite v0.5
 
 ## Added
-- Functional Places page
-- Functional Itinerary page
-- My Picks saved locally on the device
-- Correct four-item bottom navigation
-- Slide-out menu
-- Hotels, Flights, Packing, Emergency, Travel Documents, Settings and About pages
+- Installable web app and offline cache
+- Persistent packing/document checklists
+- Share trip button
+- Improved Anasera Villas page
+- Airport pickup details
+- Sensorium, Saltwood and Vasana shortlist cards
+- Google Maps buttons
+- Updated Canggu to Uluwatu itinerary
 
 ## Upload
-Unzip and upload/replace every file and folder inside `Tripbook-Lite-v0.4` in the GitHub repository root.
+Unzip and upload/replace all files and folders in the GitHub repository root.
