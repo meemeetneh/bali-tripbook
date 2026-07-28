@@ -1,0 +1,309 @@
+/* v0.6.3 — compact Inter type scale: calm, readable and deliberately light. */
+body *,
+body *::before,
+body *::after {
+  font-weight: 400 !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong,
+b,
+.section-head h2,
+.section-link,
+.tab.active,
+.filter-chip.active,
+.primary-btn,
+.action-link.primary {
+  font-weight: 500 !important;
+}
+
+.header h1,
+.sub-header h1 {
+  font-size: 30px !important;
+  line-height: 1.08 !important;
+  letter-spacing: -.04em !important;
+  font-weight: 500 !important;
+}
+
+.header p,
+.sub-header p {
+  font-size: 14px !important;
+  line-height: 1.4 !important;
+  font-weight: 300 !important;
+}
+
+.header { padding-bottom: 10px !important; }
+.header-top { margin-bottom: 16px !important; }
+.sub-header { padding-bottom: 14px !important; }
+.sub-header-row { margin-bottom: 18px !important; }
+
+.section { margin-top: 21px !important; }
+.section-head { margin-bottom: 9px !important; }
+.section-head h2 {
+  font-size: 12px !important;
+  line-height: 1.2 !important;
+  letter-spacing: .01em !important;
+  text-transform: none !important;
+}
+.section-link {
+  font-size: 12px !important;
+  letter-spacing: 0 !important;
+  text-transform: none !important;
+}
+
+.next-card {
+  grid-template-columns: 112px 1fr !important;
+  gap: 13px !important;
+  min-height: 142px !important;
+  padding: 12px !important;
+}
+.next-image { width: 112px !important; height: 118px !important; }
+.next-label {
+  font-size: 10px !important;
+  letter-spacing: .02em !important;
+  text-transform: none !important;
+  margin-bottom: 3px !important;
+}
+.next-time {
+  font-size: 16px !important;
+  line-height: 1.1 !important;
+  font-weight: 500 !important;
+  margin-bottom: 3px !important;
+}
+.next-title {
+  font-size: 19px !important;
+  line-height: 1.1 !important;
+  font-weight: 500 !important;
+  margin-bottom: 4px !important;
+}
+.next-meta {
+  font-size: 12px !important;
+  font-weight: 300 !important;
+  margin-bottom: 8px !important;
+}
+.primary-btn {
+  font-size: 13px !important;
+  font-weight: 500 !important;
+  padding: 8px 12px !important;
+}
+
+.activity-time { font-size: 13px !important; font-weight: 500 !important; }
+.activity-title { font-size: 14px !important; font-weight: 500 !important; }
+.activity-sub { font-size: 12px !important; font-weight: 300 !important; }
+.explore-item span { font-size: 10px !important; }
+.explore-icon { margin-bottom: 5px !important; }
+
+.sub-header .eyebrow,
+.eyebrow,
+.next-label,
+.recommendation-body small,
+.info-panel small,
+.timeline-copy small {
+  font-size: 10px !important;
+  line-height: 1.35 !important;
+  letter-spacing: .01em !important;
+  text-transform: none !important;
+}
+
+.detail-section h2,
+.info-panel h2,
+.timeline-card h3 {
+  font-size: 17px !important;
+  line-height: 1.2 !important;
+  font-weight: 500 !important;
+}
+.place-page .saved-place-info h1 {
+  font-size: 28px !important;
+  line-height: 1.05 !important;
+  font-weight: 500 !important;
+}
+.place-page .place-summary,
+.detail-section p,
+.info-panel p { font-weight: 300 !important; }
+
+.filter-chips { gap: 8px !important; margin-bottom: 14px !important; }
+.filter-chip {
+  min-width: 70px !important;
+  height: 64px !important;
+  border-radius: 17px !important;
+  font-size: 14px !important;
+  font-weight: 500 !important;
+}
+.places-search { height: 50px !important; border-radius: 16px !important; margin-bottom: 14px !important; }
+.places-search input { font-size: 14px !important; }
+.places-topline { margin: 0 0 9px !important; font-size: 12px !important; }
+.places-topline strong { font-weight: 500 !important; }
+
+.recommendation-list { gap: 10px !important; }
+.recommendation-card {
+  grid-template-columns: 94px 1fr 42px !important;
+  min-height: 112px !important;
+  border-radius: 17px !important;
+}
+.recommendation-visual,
+.recommendation-visual.has-photo { min-height: 112px !important; }
+.recommendation-body > a { padding: 11px 2px 11px 12px !important; }
+.recommendation-body small {
+  font-size: 10px !important;
+  line-height: 1.3 !important;
+  color: var(--tb-primary) !important;
+}
+.recommendation-body h2 {
+  font-size: 17px !important;
+  line-height: 1.14 !important;
+  font-weight: 500 !important;
+  margin: 4px 0 !important;
+}
+.recommendation-body p {
+  font-size: 12px !important;
+  line-height: 1.32 !important;
+  font-weight: 300 !important;
+}
+.recommendation-body .heart {
+  width: 32px !important;
+  height: 32px !important;
+  margin: 10px 10px 0 0 !important;
+  font-size: 18px !important;
+}
+
+.day-strip { gap: 8px !important; margin: 2px -22px 16px !important; }
+.day-chip {
+  min-width: 58px !important;
+  height: 76px !important;
+  border-radius: 16px !important;
+  gap: 1px !important;
+  font-size: 10px !important;
+}
+.day-chip strong {
+  font-size: 21px !important;
+  line-height: 1 !important;
+  font-weight: 500 !important;
+}
+.itinerary-page .timeline::before { left: 69px !important; }
+.itinerary-page .timeline-card { border-radius: 16px !important; }
+.itinerary-page .timeline-card h3 { padding: 12px 13px 0 !important; font-size: 16px !important; }
+.itinerary-page .timeline-card .timeline-meta {
+  padding: 7px 13px 12px !important;
+  gap: 10px !important;
+  font-size: 12px !important;
+  font-weight: 300 !important;
+}
+
+/* Shared fixed navigation: all four pages retain the same bottom bar. */
+.tabbar {
+  position: fixed !important;
+  z-index: 60 !important;
+  left: 50% !important;
+  bottom: 0 !important;
+  transform: translateX(-50%) !important;
+  width: min(100%, 430px) !important;
+  height: 82px !important;
+  padding: 8px 8px max(10px, env(safe-area-inset-bottom)) !important;
+  display: grid !important;
+  grid-template-columns: repeat(4, 1fr) !important;
+  background: rgba(255, 255, 255, .97) !important;
+  backdrop-filter: blur(18px) !important;
+  border-top: 1px solid var(--tb-line) !important;
+}
+.tab {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 4px !important;
+  color: var(--tb-muted) !important;
+  text-decoration: none !important;
+  font-size: 11px !important;
+}
+.tab.active { color: var(--tb-primary) !important; }
+.subpage-app { padding-bottom: 96px !important; }
+
+/* Higher-specificity overrides keep this scale in force over the earlier v0.5 rules. */
+body .app *,
+body .subpage-app * { font-weight: 400 !important; }
+
+body .app h1,
+body .app h2,
+body .app h3,
+body .app h4,
+body .app strong,
+body .subpage-app h1,
+body .subpage-app h2,
+body .subpage-app h3,
+body .subpage-app h4,
+body .subpage-app strong { font-weight: 500 !important; }
+
+body .app .header h1,
+body .subpage-app .sub-header h1 { font-size: 30px !important; line-height: 1.08 !important; letter-spacing: -.04em !important; }
+body .app .header p,
+body .subpage-app .sub-header p { font-size: 14px !important; line-height: 1.4 !important; font-weight: 300 !important; }
+body .app .header { padding-bottom: 10px !important; }
+body .app .header-top { margin-bottom: 16px !important; }
+body .subpage-app .sub-header { padding-bottom: 14px !important; }
+body .subpage-app .sub-header-row { margin-bottom: 18px !important; }
+
+body .app .section { margin-top: 21px !important; }
+body .app .section-head { margin-bottom: 9px !important; }
+body .app .section-head h2 { font-size: 12px !important; line-height: 1.2 !important; letter-spacing: .01em !important; text-transform: none !important; }
+body .app .section-link { font-size: 12px !important; letter-spacing: 0 !important; text-transform: none !important; }
+body .app .next-card { grid-template-columns: 112px 1fr !important; gap: 13px !important; min-height: 142px !important; padding: 12px !important; }
+body .app .next-image { width: 112px !important; height: 118px !important; }
+body .app .next-label { font-size: 10px !important; letter-spacing: .02em !important; text-transform: none !important; margin-bottom: 3px !important; }
+body .app .next-time { font-size: 16px !important; line-height: 1.1 !important; font-weight: 500 !important; margin-bottom: 3px !important; }
+body .app .next-title { font-size: 19px !important; line-height: 1.1 !important; font-weight: 500 !important; margin-bottom: 4px !important; }
+body .app .next-meta { font-size: 12px !important; font-weight: 300 !important; margin-bottom: 8px !important; }
+body .app .primary-btn { font-size: 13px !important; font-weight: 500 !important; padding: 8px 12px !important; }
+body .app .activity-time { font-size: 13px !important; font-weight: 500 !important; }
+body .app .activity-title { font-size: 14px !important; font-weight: 500 !important; }
+body .app .activity-sub { font-size: 12px !important; font-weight: 300 !important; }
+body .app .explore-item span { font-size: 10px !important; }
+
+body .subpage-app .sub-header .eyebrow,
+body .subpage-app .eyebrow,
+body .subpage-app .recommendation-body small,
+body .subpage-app .info-panel small,
+body .subpage-app .timeline-copy small { font-size: 10px !important; line-height: 1.35 !important; letter-spacing: .01em !important; text-transform: none !important; }
+body .subpage-app .detail-section h2,
+body .subpage-app .info-panel h2,
+body .subpage-app .timeline-card h3 { font-size: 17px !important; line-height: 1.2 !important; font-weight: 500 !important; }
+body.place-page .subpage-app .saved-place-info h1 { font-size: 28px !important; line-height: 1.05 !important; }
+body .subpage-app .place-summary,
+body .subpage-app .detail-section p,
+body .subpage-app .info-panel p { font-weight: 300 !important; }
+
+body .subpage-app .filter-chips { gap: 8px !important; margin-bottom: 14px !important; }
+body .subpage-app .filter-chip { min-width: 70px !important; height: 64px !important; border-radius: 17px !important; font-size: 14px !important; font-weight: 500 !important; }
+body .subpage-app .places-search { height: 50px !important; border-radius: 16px !important; margin-bottom: 14px !important; }
+body .subpage-app .places-search input { font-size: 14px !important; }
+body .subpage-app .places-topline { margin: 0 0 9px !important; font-size: 12px !important; }
+body .subpage-app .places-topline strong { font-weight: 500 !important; }
+body .subpage-app .recommendation-list { gap: 10px !important; }
+body .subpage-app .recommendation-card { grid-template-columns: 94px 1fr 42px !important; min-height: 112px !important; border-radius: 17px !important; }
+body .subpage-app .recommendation-visual,
+body .subpage-app .recommendation-visual.has-photo { min-height: 112px !important; }
+body .subpage-app .recommendation-body > a { padding: 11px 2px 11px 12px !important; }
+body .subpage-app .recommendation-body small { font-size: 10px !important; line-height: 1.3 !important; color: var(--tb-primary) !important; }
+body .subpage-app .recommendation-body h2 { font-size: 17px !important; line-height: 1.14 !important; margin: 4px 0 !important; }
+body .subpage-app .recommendation-body p { font-size: 12px !important; line-height: 1.32 !important; font-weight: 300 !important; }
+body .subpage-app .recommendation-body .heart { width: 32px !important; height: 32px !important; margin: 10px 10px 0 0 !important; font-size: 18px !important; }
+
+body .subpage-app .day-strip { gap: 8px !important; margin: 2px -22px 16px !important; }
+body .subpage-app .day-chip { min-width: 58px !important; height: 76px !important; border-radius: 16px !important; gap: 1px !important; font-size: 10px !important; }
+body .subpage-app .day-chip strong { font-size: 21px !important; line-height: 1 !important; }
+body.itinerary-page .subpage-app .timeline::before { left: 69px !important; }
+body.itinerary-page .subpage-app .timeline-card { border-radius: 16px !important; }
+body.itinerary-page .subpage-app .timeline-card h3 { padding: 12px 13px 0 !important; font-size: 16px !important; }
+body.itinerary-page .subpage-app .timeline-card .timeline-meta { padding: 7px 13px 12px !important; gap: 10px !important; font-size: 12px !important; font-weight: 300 !important; }
+
+body .app .tabbar,
+body .subpage-app .tabbar { position: fixed !important; z-index: 60 !important; left: 50% !important; bottom: 0 !important; transform: translateX(-50%) !important; width: min(100%, 430px) !important; height: 82px !important; padding: 8px 8px max(10px, env(safe-area-inset-bottom)) !important; display: grid !important; grid-template-columns: repeat(4, 1fr) !important; background: rgba(255, 255, 255, .97) !important; backdrop-filter: blur(18px) !important; border-top: 1px solid var(--tb-line) !important; }
+body .app .tab,
+body .subpage-app .tab { display: flex !important; flex-direction: column !important; align-items: center !important; justify-content: center !important; gap: 4px !important; color: var(--tb-muted) !important; text-decoration: none !important; font-size: 11px !important; }
+body .app .tab.active,
+body .subpage-app .tab.active { color: var(--tb-primary) !important; font-weight: 500 !important; }
+body .subpage-app { padding-bottom: 96px !important; }

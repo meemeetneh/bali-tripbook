@@ -1,5 +1,19 @@
 # Changelog
 
+## v0.6.3 — 2026-07-28
+
+- Established the app-wide Inter type scale: 300 for supporting copy, 400 for standard UI and 500 for emphasis; no UI text exceeds 500.
+- Reduced header, section-label, card-title, place-row and itinerary typography to preserve more usable space.
+- Changed coral metadata labels to sentence case with tighter leading.
+- Reduced Places category-tile height and venue-row density.
+- Removed the itinerary day-progress panel, compacted date cards and restored its persistent bottom navigation.
+
+## v0.6.2 — 2026-07-28
+
+- Switched the entire interface to locally hosted Inter (400, 500, 600 and 700).
+- Added Inter to the offline app shell, so the chosen typography remains available without a network connection.
+- Corrected the Home bottom navigation grid from five slots to four, matching its four navigation items.
+
 ## v0.6.1 — 2026-07-28
 
 - Realigned the interface to the locked UI system in `/ui system`.
