@@ -1,5 +1,9 @@
 # Changelog
 
+## v0.6.24 — 2026-07-29
+
+- Added visible “What to look for” remarks to every Shopping place.
+
 ## v0.6.23 — 2026-07-29
 
 - Removed Goldust Beauty Lounge from Wellness.
