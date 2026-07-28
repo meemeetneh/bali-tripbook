@@ -1,5 +1,9 @@
 # Changelog
 
+## v0.6.20 — 2026-07-29
+
+- Promoted Saltwood Bingin to a must-go Uluwatu restaurant and added official hours, menu, website, Instagram, WhatsApp, email, Maps and timing guidance for brunch versus sunset dinner.
+
 ## v0.6.19 — 2026-07-29
 
 - Added a dedicated Uluwatu Beaches list: Suluban, Green Bowl, Melasti, Dreamland, Nyang Nyang and Karma Beach.
