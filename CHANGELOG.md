@@ -1,5 +1,9 @@
 # Changelog
 
+## v0.6.19 — 2026-07-29
+
+- Added a dedicated Uluwatu Beaches list: Suluban, Green Bowl, Melasti, Dreamland, Nyang Nyang and Karma Beach.
+
 ## v0.6.18 — 2026-07-29
 
 - Reorganised Places into separate Café, Restaurant, Beach Club, Wellness, Shopping and Nightlife lists.
