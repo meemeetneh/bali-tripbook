@@ -1,5 +1,9 @@
 # Changelog
 
+## v0.6.15 — 2026-07-29
+
+- Added Nibs Uluwatu as an interested dessert choice, with venue details intentionally left for confirmation.
+
 ## v0.6.14 — 2026-07-29
 
 - Added Ømbae Sunset Yoga at Ulu Cliffhouse to Monday, 3 Aug at 5 PM as a planned, unreserved Uluwatu activity.
