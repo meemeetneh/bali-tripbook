@@ -136,8 +136,8 @@
       "date": "2026-08-03",
       "title": "Uluwatu",
       "items": [
-        "Still planning",
         "Beach / slow lunch / wellness",
+        "5:00 PM Ømbae Sunset Yoga at Ulu Cliffhouse — planned, not reserved",
         "Saltwood Uluwatu — brunch or sunset dinner (interested)"
       ]
     },
@@ -178,7 +178,7 @@
       { "name": "Tonic Massage & Botanicals", "distance": "≈2.7 km" },
       { "name": "Sundari Wellness Pererenan", "distance": "≈2.8 km" }
     ],
-    "other": ["Mexicola Canggu", "Atlas Beach Club", "Santanera", "ULU Balinese SPA Club", "La Favela Seminyak", "La Brisa Market", "Saltwood Uluwatu", "Cashew Tree", "Nourish", "% Arabica Bali Uluwatu", "Sundays Beach Club", "Suka Uluwatu", "Single Fin Bali", "MÛ Boutique Resort / Bungalows", "Kamaria Bags", "Bintang Supermarket", "Beachwalk Shopping Center"],
+    "other": ["Mexicola Canggu", "Atlas Beach Club", "Santanera", "ULU Balinese SPA Club", "La Favela Seminyak", "La Brisa Market", "Saltwood Uluwatu", "Cashew Tree", "Nourish", "% Arabica Bali Uluwatu", "Sundays Beach Club", "Ømbae Sunset Yoga at Ulu Cliffhouse", "Suka Uluwatu", "Single Fin Bali", "MÛ Boutique Resort / Bungalows", "Kamaria Bags", "Bintang Supermarket", "Beachwalk Shopping Center"],
     "removed": [{ "name": "Sun & Surf Stay", "reason": "Closed" }]
   },
   "preferences": {

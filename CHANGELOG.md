@@ -1,5 +1,10 @@
 # Changelog
 
+## v0.6.14 — 2026-07-29
+
+- Added Ømbae Sunset Yoga at Ulu Cliffhouse to Monday, 3 Aug at 5 PM as a planned, unreserved Uluwatu activity.
+- Added current public-class pricing, booking, venue and Ømbae Instagram links.
+
 ## v0.6.13 — 2026-07-29
 
 - Added Sundays Beach Club as an interested Uluwatu breakfast or brunch option, with live booking, menu, Instagram and Maps links.
