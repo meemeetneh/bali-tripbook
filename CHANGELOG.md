@@ -1,5 +1,9 @@
 # Changelog
 
+## v0.6.21 — 2026-07-29
+
+- Added Bohe Bali, Club Pantai and Lylyboy Bali to Shopping with the shopping notes you shared, direct Instagram links and Maps searches.
+
 ## v0.6.20 — 2026-07-29
 
 - Promoted Saltwood Bingin to a must-go Uluwatu restaurant and added official hours, menu, website, Instagram, WhatsApp, email, Maps and timing guidance for brunch versus sunset dinner.
