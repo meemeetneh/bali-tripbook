@@ -1,5 +1,9 @@
 # Changelog
 
+## v0.6.23 — 2026-07-29
+
+- Removed Goldust Beauty Lounge from Wellness.
+
 ## v0.6.22 — 2026-07-29
 
 - Added Brunch Club Pererenan as a breakfast/brunch choice with your chicken-waffle and pancake remarks.
