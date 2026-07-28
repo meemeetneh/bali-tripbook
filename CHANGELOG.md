@@ -1,5 +1,9 @@
 # Changelog
 
+## v0.6.25 — 2026-07-29
+
+- Added Blacklist Coffee Roasters in Canggu with the Pitch Blend and breakfast remarks you shared, plus official website, Instagram and Maps links.
+
 ## v0.6.24 — 2026-07-29
 
 - Added visible “What to look for” remarks to every Shopping place.
