@@ -1,5 +1,9 @@
 # Changelog
 
+## v0.6.35 — 2026-07-29
+
+- Promoted Spring Spa Bali to a confirmed must-go wellness place, with Canggu and Uluwatu branch guidance, official links, booking details and the latest publicly verifiable treatment-price snapshot.
+
 ## v0.6.34 — 2026-07-29
 
 - Added 32do Bali as an interested Petitenget / Seminyak café, with links, hours, price guidance and what to look for.
