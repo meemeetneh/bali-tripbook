@@ -1,30 +1,14 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#fff6f7"><title>My Picks — Bali Tripbook</title><link rel="stylesheet" href="assets/site.css"><style>
-*{box-sizing:border-box}html{background:#f2f3f5}body{margin:0;background:#f2f3f5;color:#171719;font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","SF Pro Text","Helvetica Neue",Arial,sans-serif;-webkit-font-smoothing:antialiased}button,a{font:inherit;-webkit-tap-highlight-color:transparent}.tabbar{position:fixed;left:50%;bottom:0;transform:translateX(-50%);width:min(100%,430px);height:76px;padding:8px 8px calc(7px + env(safe-area-inset-bottom));display:grid;grid-template-columns:repeat(4,1fr);background:rgba(255,255,255,.96);border-top:1px solid #ececef;z-index:50;backdrop-filter:blur(18px)}.tab{border:0;background:transparent;color:#7b7c81;text-decoration:none;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;font-size:11px;font-weight:700}.tab svg{width:23px;height:23px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}.tab.active{color:#e55e6d}.primary-action{border:0;background:#f2707d;color:#fff;border-radius:99px;padding:13px 19px;font-weight:760;text-decoration:none;display:inline-block}
-</style><link rel="manifest" href="manifest.webmanifest">
-</head><body><div class="subpage-app">
-<header class="sub-header"><div class="sub-header-row"><a class="back-home" href="index.html" aria-label="Back home">‹</a><button class="sub-menu" id="subMenuButton" aria-label="Open menu">☰</button></div><div class="eyebrow">Your shortlist</div><h1>My Picks</h1><p>Places saved on this device.</p></header>
-<main class="sub-content">
-<div class="empty-card" id="empty"><div class="empty-icon">♡</div><h2>No saved places yet</h2><p>Save places from the Places page and they will appear here on this device.</p><a class="primary-action" href="places.html">Explore places</a></div><div class="recommendation-list" id="savedList"></div>
-</main><nav class="tabbar" aria-label="Primary navigation"><a class="tab" href="index.html"><svg viewBox="0 0 24 24"><path d="m3 10 9-7 9 7v10h-6v-6H9v6H3Z"/></svg><span>Home</span></a><a class="tab" href="places.html"><svg viewBox="0 0 24 24"><path d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></svg><span>Places</span></a><a class="tab" href="itinerary.html"><svg viewBox="0 0 24 24"><rect x="4" y="5" width="16" height="15" rx="2"/><path d="M8 3v4M16 3v4M4 10h16"/></svg><span>Itinerary</span></a><a class="tab active" href="picks.html"><svg viewBox="0 0 24 24"><path d="M12 21s-7-4.4-7-10a4 4 0 0 1 7-2.7A4 4 0 0 1 19 11c0 5.6-7 10-7 10Z"/></svg><span>My Picks</span></a></nav></div>
-<div class="menu-backdrop" id="menuBackdrop"></div>
-<aside class="side-menu" id="sideMenu" aria-hidden="true">
-  <div class="side-menu-head">
-    <div><span>Bali Tripbook</span><strong>Trip menu</strong></div>
-    <button id="closeMenu" aria-label="Close menu">×</button>
-  </div>
-  <nav>
-    <a href="hotels.html">🏨 <span>Hotels</span></a>
-    <a href="flights.html">✈️ <span>Flights</span></a>
-    <a href="packing.html">🎒 <span>Packing List</span></a>
-    <a href="emergency.html">＋ <span>Emergency</span></a>
-    <a href="documents.html">▤ <span>Travel Documents</span></a>
-    <a href="settings.html">⚙️ <span>Settings</span></a>
-    <a href="about.html">ⓘ <span>About</span></a>
-  </nav>
-</aside>
-<script src="assets/trip-data.js"></script><script src="assets/site.js"></script><script>
-const savedIds=JSON.parse(localStorage.getItem('tripbookSaved')||'[]'),savedList=document.getElementById('savedList'),empty=document.getElementById('empty'),places=window.TRIPBOOK_PLACES||[];
-const selected=savedIds.map(id=>places.find(place=>place.id===id)||{id,name:id,description:'Saved to your personal shortlist.'});
-if(selected.length){empty.style.display='none';selected.forEach(place=>{const card=document.createElement('article');card.className='info-panel saved-row';card.innerHTML=`<div class="saved-place-info"><small>Saved place</small><h2>${place.name}</h2><p>${place.description}</p></div><button class="heart saved" aria-label="Remove ${place.name}">♥</button>`;card.querySelector('button').onclick=()=>{localStorage.setItem('tripbookSaved',JSON.stringify(savedIds.filter(id=>id!==place.id)));card.remove();if(!savedList.children.length)empty.style.display='block'};savedList.appendChild(card)})}
-</script></body></html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#ffffff"><title>My Picks — Bali Tripbook</title><link rel="stylesheet" href="assets/site.css?airbnb=16"><link rel="stylesheet" href="assets/trip-tools.css?trip-tools=6"><link rel="manifest" href="manifest.webmanifest"></head>
+<body class="trip-tool-page picks-page"><div class="subpage-app">
+  <header class="tool-header"><a href="index.html" aria-label="Back home">‹</a><div><h1>My Picks <span>♥</span></h1><p>Your personal collection for this trip.</p></div><div class="tool-header-actions"><button type="button" aria-label="Search saved places">⌕</button><button type="button" id="subMenuButton" aria-label="Open menu">⋮</button></div></header>
+  <main class="tool-content">
+    <section class="picks-intro"><i>♥</i><div><strong>Favourite places</strong><small>Places you want to visit.</small></div><a href="places.html">Explore places <b>›</b></a></section>
+    <div class="tool-chips picks-chips" aria-label="Favourite place categories"><button class="active" data-filter="all">All</button><button data-filter="coffee">Café</button><button data-filter="dinner">Restaurant</button><button data-filter="beach">Beach Club</button><button data-filter="shopping">Shopping</button><button data-filter="spa">Wellness</button></div>
+    <section class="picks-favourites" id="picksFavourites" aria-live="polite"></section>
+    <a class="picks-add" href="places.html">＋ Add to favourites</a>
+    <section class="picks-section"><header><div><i>☆</i><div><h2>My Discoveries</h2><p>Spots you discovered and added.</p></div></div><span>See all <b>›</b></span></header><div class="picks-empty-strip"><i>＋</i><div><strong>Add a discovery</strong><small>Save new places you find along your journey.</small></div></div></section>
+    <section class="picks-section"><header><div><i>✓</i><div><h2>Visited Places</h2><p>Places you’ve been to on this trip.</p></div></div><span>See all <b>›</b></span></header><div class="picks-empty-strip visited"><i>✓</i><div><strong>No places marked visited yet</strong><small>Your visited places will appear here.</small></div></div></section>
+  </main>
+  <nav class="tabbar" aria-label="Primary navigation"><a class="tab" href="index.html"><svg viewBox="0 0 24 24"><path d="m3 10 9-7 9 7v10a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1Z"/><path d="M9 21v-6h6v6"/></svg><span>Home</span></a><a class="tab" href="places.html"><svg viewBox="0 0 24 24"><path d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.4"/></svg><span>Places</span></a><a class="tab" href="itinerary.html"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M7 3v4M17 3v4M3 10h18"/></svg><span>Itinerary</span></a><a class="tab active" href="picks.html"><svg viewBox="0 0 24 24"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.9-8.6a5.5 5.5 0 0 0-.1-7.8Z"/></svg><span>My Picks</span></a></nav>
+</div><div class="menu-backdrop" id="menuBackdrop"></div><aside class="side-menu" id="sideMenu" aria-hidden="true"><div class="side-menu-head"><div><span>Bali Tripbook</span><strong>Trip menu</strong></div><button id="closeMenu" aria-label="Close menu">×</button></div><nav><a href="hotels.html">🏨 Hotels</a><a href="flights.html">✈️ Flights</a><a href="packing.html">🎒 Packing List</a><a href="emergency.html">＋ Emergency</a><a href="documents.html">▤ Travel Documents</a><a href="settings.html">⚙️ Settings</a><a href="about.html">ⓘ About</a></nav></aside><script src="assets/trip-data.js"></script><script src="assets/site.js?picks=3"></script><script src="assets/picks-page.js"></script></body></html>

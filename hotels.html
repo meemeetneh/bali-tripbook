@@ -1,27 +1,61 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#fff6f7"><title>Hotels — Bali Tripbook</title><link rel="stylesheet" href="assets/site.css"><style>
-*{box-sizing:border-box}html{background:#f2f3f5}body{margin:0;background:#f2f3f5;color:#171719;font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","SF Pro Text","Helvetica Neue",Arial,sans-serif;-webkit-font-smoothing:antialiased}button,a{font:inherit;-webkit-tap-highlight-color:transparent}.tabbar{position:fixed;left:50%;bottom:0;transform:translateX(-50%);width:min(100%,430px);height:76px;padding:8px 8px calc(7px + env(safe-area-inset-bottom));display:grid;grid-template-columns:repeat(4,1fr);background:rgba(255,255,255,.96);border-top:1px solid #ececef;z-index:50;backdrop-filter:blur(18px)}.tab{border:0;background:transparent;color:#7b7c81;text-decoration:none;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;font-size:11px;font-weight:700}.tab svg{width:23px;height:23px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}.tab.active{color:#e55e6d}.primary-action{border:0;background:#f2707d;color:#fff;border-radius:99px;padding:13px 19px;font-weight:760;text-decoration:none;display:inline-block}
-</style><link rel="manifest" href="manifest.webmanifest">
-</head><body><div class="subpage-app">
-<header class="sub-header"><div class="sub-header-row"><a class="back-home" href="index.html" aria-label="Back home">‹</a><button class="sub-menu" id="subMenuButton" aria-label="Open menu">☰</button></div><div class="eyebrow">Accommodation</div><h1>Hotels</h1><p>Your confirmed and shortlisted stays.</p></header>
-<main class="sub-content">
-<div class="info-panel"><small>Confirmed Canggu stay</small><h2>Anasera Villas Echo Beach</h2><p>31 Jul–2 Aug 2026 · 2 adults · Canggu / Pererenan area</p><div class="tag-row"><span class="tag">Confirmed</span><span class="tag">Airport pickup</span><span class="tag">Scooter trip</span></div><div class="detail-list"><div class="detail-row"><span>Check-in</span><strong>31 Jul 2026</strong></div><div class="detail-row"><span>Check-out</span><strong>2 Aug 2026</strong></div><div class="detail-row"><span>Guests</span><strong>2 adults</strong></div></div><div class="action-grid"><a class="action-link primary" href="villa.html">Villa details</a><a class="action-link" href="places.html">Nearby places</a></div></div>
-<div class="info-panel"><small>Next stay</small><h2>Uluwatu accommodation</h2><p>The confirmed property details have not been added to this build yet.</p><div class="note-box">This stays blank rather than showing an unconfirmed hotel.</div></div>
-</main><nav class="tabbar" aria-label="Primary navigation"><a class="tab active" href="index.html"><svg viewBox="0 0 24 24"><path d="m3 10 9-7 9 7v10h-6v-6H9v6H3Z"/></svg><span>Home</span></a><a class="tab" href="places.html"><svg viewBox="0 0 24 24"><path d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></svg><span>Places</span></a><a class="tab" href="itinerary.html"><svg viewBox="0 0 24 24"><rect x="4" y="5" width="16" height="15" rx="2"/><path d="M8 3v4M16 3v4M4 10h16"/></svg><span>Itinerary</span></a><a class="tab" href="picks.html"><svg viewBox="0 0 24 24"><path d="M12 21s-7-4.4-7-10a4 4 0 0 1 7-2.7A4 4 0 0 1 19 11c0 5.6-7 10-7 10Z"/></svg><span>My Picks</span></a></nav></div>
-<div class="menu-backdrop" id="menuBackdrop"></div>
-<aside class="side-menu" id="sideMenu" aria-hidden="true">
-  <div class="side-menu-head">
-    <div><span>Bali Tripbook</span><strong>Trip menu</strong></div>
-    <button id="closeMenu" aria-label="Close menu">×</button>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#ffffff">
+  <title>Hotels — Bali Tripbook</title>
+  <link rel="stylesheet" href="assets/site.css?airbnb=11">
+  <link rel="manifest" href="manifest.webmanifest">
+</head>
+<body class="hotels-page">
+  <div class="subpage-app">
+    <header class="hotels-header">
+      <a class="hotels-back" href="index.html" aria-label="Back home">‹</a>
+      <div class="hotels-title"><h1>Hotels <svg class="hotel-title-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m3 10 9-7 9 7v10a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1Z"/><path d="M9 21v-6h6v6"/></svg></h1><p>Your booked stays for this trip.</p></div>
+      <div class="hotels-actions"><button type="button" aria-label="Search hotels">⌕</button><button type="button" id="subMenuButton" aria-label="Open menu">⋮</button></div>
+    </header>
+
+    <main class="hotels-content">
+      <section class="hotels-summary" aria-label="Stay summary">
+        <span class="hotels-summary-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="5" y="5" width="14" height="16" rx="2"/><path d="M9 5V3M15 5V3M5 10h14M9 14h6M9 17h4"/></svg></span><div><strong>2 nights, 2 stays</strong><small>31 Jul – 2 Aug 2026</small></div><a href="#stay-one">View summary <b>›</b></a>
+      </section>
+
+      <article class="hotel-stay" id="stay-one">
+        <div class="hotel-photo hotel-photo-anasera"><img src="sensorium.jpg" alt="Anasera Villas Echo Beach"><span>Confirmed stay</span></div>
+        <div class="hotel-card-body">
+          <div class="hotel-card-head"><small>31 Jul – 2 Aug</small><button type="button" aria-label="More options for Anasera Villas">⋮</button></div>
+          <h2>Anasera Villas Echo Beach</h2>
+          <p class="hotel-location">⌖ Canggu / Pererenan</p>
+          <div class="hotel-features"><span><b>⌂</b>Villa</span><span><b>⌁</b>Airport<br>pickup</span><span><b>⌁</b>Scooter<br>trip</span><span><b>☕</b>Stay<br>notes</span></div>
+          <div class="hotel-status confirmed"><b>✓</b><span><strong>Confirmed</strong><small>31 Jul 2026 · Check-in time to confirm</small></span></div>
+        </div>
+        <a class="hotel-details" href="villa.html"><span>▤</span>View booking details &amp; notes <b>›</b></a>
+      </article>
+
+      <article class="hotel-stay hotel-stay-pending" id="stay-two">
+        <div class="hotel-photo hotel-photo-pending"><span>Stay 2</span></div>
+        <div class="hotel-card-body">
+          <div class="hotel-card-head"><small>From 2 Aug</small><button type="button" aria-label="More options for second stay">⋮</button></div>
+          <h2>Second stay</h2>
+          <p class="hotel-location">⌖ Property and area to confirm</p>
+          <div class="hotel-features hotel-features-pending"><span><b>⌂</b>Stay<br>details</span><span><b>⌁</b>Check-in<br>time</span><span><b>⌁</b>Pickup<br>details</span><span><b>☕</b>Notes</span></div>
+          <div class="hotel-status upcoming"><b>◷</b><span><strong>Details pending</strong><small>Add the confirmed property when ready</small></span></div>
+        </div>
+        <span class="hotel-details muted"><span>▤</span>Booking details pending <b>›</b></span>
+      </article>
+    </main>
+
+    <nav class="tabbar" aria-label="Primary navigation">
+      <a class="tab" href="index.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m3 10 9-7 9 7v10a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1Z"/><path d="M9 21v-6h6v6"/></svg><span>Home</span></a>
+      <a class="tab" href="places.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.4"/></svg><span>Places</span></a>
+      <a class="tab" href="itinerary.html"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M7 3v4M17 3v4M3 10h18"/></svg><span>Itinerary</span></a>
+      <a class="tab" href="picks.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.9-8.6a5.5 5.5 0 0 0-.1-7.8Z"/></svg><span>My Picks</span></a>
+    </nav>
   </div>
-  <nav>
-    <a href="hotels.html">🏨 <span>Hotels</span></a>
-    <a href="flights.html">✈️ <span>Flights</span></a>
-    <a href="packing.html">🎒 <span>Packing List</span></a>
-    <a href="emergency.html">＋ <span>Emergency</span></a>
-    <a href="documents.html">▤ <span>Travel Documents</span></a>
-    <a href="settings.html">⚙️ <span>Settings</span></a>
-    <a href="about.html">ⓘ <span>About</span></a>
-  </nav>
-</aside>
-<script src="assets/site.js"></script></body></html>
+
+  <div class="menu-backdrop" id="menuBackdrop"></div>
+  <aside class="side-menu" id="sideMenu" aria-hidden="true"><div class="side-menu-head"><div><span>Bali Tripbook</span><strong>Trip menu</strong></div><button id="closeMenu" aria-label="Close menu">×</button></div><nav><a href="hotels.html">🏨 Hotels</a><a href="flights.html">✈️ Flights</a><a href="packing.html">🎒 Packing List</a><a href="emergency.html">＋ Emergency</a><a href="documents.html">▤ Travel Documents</a><a href="settings.html">⚙️ Settings</a><a href="about.html">ⓘ About</a></nav></aside>
+  <script src="assets/site.js?hotels=2"></script>
+</body>
+</html>

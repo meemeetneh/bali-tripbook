@@ -1,5 +1,20 @@
 # Changelog
 
+## v0.6.5 — 2026-07-29
+
+- Completed the locked Airbnb Cereal visual system across Hotels, Flights, Travel Docs, Packing, Emergency and My Picks.
+- Refined the Home, Places, place-detail, itinerary and hotel layouts to their approved mobile reference patterns.
+- Replaced unsupported glyph fallbacks with consistent inline SVG icons for Hotels, Packing, Travel Docs and Emergency.
+- Ensured title-and-icon pairs remain on one line across the shared page headers; shortened the Travel Docs title for compact screens.
+- Added interactive packing progress and retained saved-place behaviour through localStorage.
+- Updated the PWA cache version and app shell for all new layouts, fonts, styles and scripts.
+
+## v0.6.4 — 2026-07-28
+
+- Added the supplied licensed Airbnb Cereal font files and made them the app-wide type family.
+- Added the locked Home-screen visual system: coral, charcoal, thin icons, quiet shadows, compact cards and four-tab navigation.
+- Applied the shared Airbnb Cereal system to every existing page and versioned the offline cache for the new assets.
+
 ## v0.6.3 — 2026-07-28
 
 - Established the app-wide Inter type scale: 300 for supporting copy, 400 for standard UI and 500 for emphasis; no UI text exceeds 500.

@@ -1,1 +1,47 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#ffffff"><title>Places — Bali Tripbook</title><link rel="stylesheet" href="assets/site.css"><link rel="manifest" href="manifest.webmanifest"><style>*{box-sizing:border-box}body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","Helvetica Neue",Arial,sans-serif}.places-search{height:58px;border:1px solid #e9e9eb;border-radius:18px;display:flex;align-items:center;gap:12px;padding:0 18px;color:#686b72;box-shadow:0 7px 20px rgba(31,31,31,.05);margin-bottom:19px}.places-search input{width:100%;border:0;outline:0;font:inherit;font-size:16px;background:transparent}.places-topline{display:flex;justify-content:space-between;align-items:center;margin:2px 0 13px;color:#666a73;font-size:14px}.places-topline strong{color:#1f1f1f}</style></head><body><div class="subpage-app"><header class="sub-header"><div class="sub-header-row"><a class="back-home" href="index.html" aria-label="Back home">‹</a><button class="sub-menu" id="subMenuButton" aria-label="Open menu">☰</button></div><h1>Places</h1><p>Favourites around Canggu and Pererenan.</p></header><main class="sub-content"><label class="places-search">⌕<input id="placeSearch" type="search" placeholder="Search places…"></label><nav class="filter-chips" aria-label="Place categories"><a class="filter-chip active" href="places.html">All</a><a class="filter-chip" href="coffee.html">Café</a><a class="filter-chip" href="dinner.html">Dinner</a><a class="filter-chip" href="yoga.html">Wellness</a><a class="filter-chip" href="spa.html">Spa</a></nav><div class="places-topline"><strong>10 places</strong><span>Recommended⌄</span></div><div class="recommendation-list" id="allPlaces"></div></main><nav class="tabbar" aria-label="Primary navigation"><a class="tab" href="index.html">⌂<span>Home</span></a><a class="tab active" href="places.html">⌖<span>Places</span></a><a class="tab" href="itinerary.html">▣<span>Itinerary</span></a><a class="tab" href="picks.html">♡<span>My Picks</span></a></nav></div><div class="menu-backdrop" id="menuBackdrop"></div><aside class="side-menu" id="sideMenu" aria-hidden="true"><div class="side-menu-head"><div><span>Bali Tripbook</span><strong>Trip menu</strong></div><button id="closeMenu" aria-label="Close menu">×</button></div><nav><a href="hotels.html">🏨 Hotels</a><a href="flights.html">✈️ Flights</a><a href="packing.html">🎒 Packing List</a><a href="emergency.html">＋ Emergency</a><a href="documents.html">▤ Travel Documents</a><a href="settings.html">⚙️ Settings</a><a href="about.html">ⓘ About</a></nav></aside><script src="assets/trip-data.js"></script><script src="assets/site.js"></script><script src="assets/place-pages.js"></script><script>document.getElementById('placeSearch').addEventListener('input',event=>document.querySelectorAll('.recommendation-card').forEach(card=>card.hidden=!card.textContent.toLowerCase().includes(event.target.value.toLowerCase())))</script></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#ffffff">
+  <title>Places — Bali Tripbook</title>
+  <link rel="stylesheet" href="assets/site.css?airbnb=3">
+  <link rel="manifest" href="manifest.webmanifest">
+</head>
+<body class="places-index">
+  <div class="subpage-app">
+    <header class="places-header">
+      <h1>Places</h1>
+      <a class="places-map" href="https://www.google.com/maps/search/?api=1&amp;query=Anasera+Villas+Echo+Beach+Canggu" target="_blank" rel="noopener" aria-label="Open map">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m3 6 6-3 6 3 6-3v15l-6 3-6-3-6 3V6Z"/><path d="M9 3v15M15 6v15"/></svg>
+      </a>
+    </header>
+
+    <main class="places-content">
+      <label class="places-search"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8"/><path d="m16 16 4.2 4.2"/></svg><input id="placeSearch" type="search" placeholder="Search places…"></label>
+
+      <nav class="place-categories" aria-label="Place categories">
+        <a class="place-category active" href="coffee.html"><svg viewBox="0 0 24 24"><path d="M4 9h11v5a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5Z"/><path d="M15 10h2a3 3 0 0 1 0 6h-2M7 3v3M11 3v3"/></svg>Cafe</a>
+        <a class="place-category" href="dinner.html"><svg viewBox="0 0 24 24"><path d="M7 3v8M4 3v5a3 3 0 0 0 6 0V3M7 11v10M16 3c3 0 4 4 4 7v2h-4V3Zm0 9v9"/></svg>Restaurant</a>
+        <a class="place-category" href="places.html"><svg viewBox="0 0 24 24"><path d="M3 19h18M5 15c3-4 6-4 9 0M12 15c2-6 1-9-2-11M10 5c3 0 5 1 6 3M12 4l-2 3M12 4l3 2"/></svg>Beach Club</a>
+        <a class="place-category" href="yoga.html"><svg viewBox="0 0 24 24"><path d="M12 20V9M12 9C8 6 6 4 6 2c4 0 6 3 6 7ZM12 9c4-3 6-5 6-7-4 0-6 3-6 7ZM12 13c-5 0-8 2-9 5 4 1 7 0 9-3M12 13c5 0 8 2 9 5-4 1-7 0-9-3"/><path d="M5 21h14"/></svg>Wellness</a>
+        <a class="place-category" href="places.html"><svg viewBox="0 0 24 24"><path d="M5 8h14v12H5Z"/><path d="M8 8V6a4 4 0 0 1 8 0v2M5 12h14"/><path d="M15.5 15.5h.01"/></svg>Shopping</a>
+      </nav>
+
+      <nav class="place-filters" aria-label="Location filters">
+        <button class="place-filter active">★ Recommended</button><button class="place-filter">Canggu</button><button class="place-filter">Pererenan</button><button class="place-filter">Seminyak</button><button class="place-filter">Uluwatu</button>
+      </nav>
+      <div class="places-topline"><strong>10 places</strong><span>Sort by: Recommended⌄</span></div>
+      <div class="place-index-list" id="allPlaces"></div>
+    </main>
+
+    <nav class="tabbar" aria-label="Primary navigation">
+      <a class="tab" href="index.html"><svg viewBox="0 0 24 24"><path d="m3 10 9-7 9 7v10h-6v-6H9v6H3Z"/></svg><span>Home</span></a><a class="tab active" href="places.html"><svg viewBox="0 0 24 24"><path d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></svg><span>Places</span></a><a class="tab" href="itinerary.html"><svg viewBox="0 0 24 24"><rect x="4" y="5" width="16" height="15" rx="2"/><path d="M8 3v4M16 3v4M4 10h16"/></svg><span>Itinerary</span></a><a class="tab" href="picks.html"><svg viewBox="0 0 24 24"><path d="M12 21s-7-4.4-7-10a4 4 0 0 1 7-2.7A4 4 0 0 1 19 11c0 5.6-7 10-7 10Z"/></svg><span>My Picks</span></a>
+    </nav>
+  </div>
+  <div class="menu-backdrop" id="menuBackdrop"></div>
+  <aside class="side-menu" id="sideMenu" aria-hidden="true"><div class="side-menu-head"><div><span>Bali Tripbook</span><strong>Trip menu</strong></div><button id="closeMenu" aria-label="Close menu">×</button></div><nav><a href="hotels.html">🏨 Hotels</a><a href="flights.html">✈️ Flights</a><a href="packing.html">🎒 Packing List</a><a href="emergency.html">＋ Emergency</a><a href="documents.html">▤ Travel Documents</a><a href="settings.html">⚙️ Settings</a><a href="about.html">ⓘ About</a></nav></aside>
+  <script src="assets/trip-data.js?places=2"></script><script src="assets/site.js?places=2"></script><script src="assets/place-pages.js?places=2"></script>
+  <script>document.getElementById('placeSearch').addEventListener('input',event=>document.querySelectorAll('.place-index-card').forEach(card=>card.hidden=!card.textContent.toLowerCase().includes(event.target.value.toLowerCase())))</script>
+</body>
+</html>
