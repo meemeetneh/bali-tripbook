@@ -1,5 +1,10 @@
 # Changelog
 
+## v0.6.8 — 2026-07-29
+
+- Added Santanera in Canggu as the planned 1 Aug dinner, based on your shared map.
+- Marked it clearly as planned only; no reservation has been made or stored.
+
 ## v0.6.7 — 2026-07-29
 
 - Marked the 2–4 Aug Uluwatu stay as confirmed and added non-sensitive room and timing details.
