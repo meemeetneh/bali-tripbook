@@ -1,5 +1,10 @@
 # Changelog
 
+## v0.6.12 — 2026-07-29
+
+- Added the verified % Arabica Bali Uluwatu branch with official website, Instagram and Maps links.
+- Did not add Canggu because it is not listed among the official Bali locations.
+
 ## v0.6.11 — 2026-07-29
 
 - Added ULU Balinese SPA Club as an interested Canggu spa with live booking, price-list, Instagram and Maps links.
