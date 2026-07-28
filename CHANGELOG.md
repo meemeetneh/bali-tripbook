@@ -1,5 +1,10 @@
 # Changelog
 
+## v0.6.18 — 2026-07-29
+
+- Reorganised Places into separate Café, Restaurant, Beach Club, Wellness, Shopping and Nightlife lists.
+- Moved Hatch Uluwatu Sunday Market to Shopping, kept Hatch nightlife separate, moved all spas into Wellness, and removed Vasana.
+
 ## v0.6.17 — 2026-07-29
 
 - Added Hatch Uluwatu’s Sunday Market and nightlife as separate interested options with current operating-time notes, event links and Instagram.

@@ -12,9 +12,10 @@
   });
   const card = place => `<article class="recommendation-card"><a class="place-card-link" href="place.html?id=${encodeURIComponent(place.id)}"><div class="recommendation-visual has-photo"><img loading="lazy" decoding="async" src="${esc(place.image)}" alt="${esc(place.name)}"></div></a><div class="recommendation-body"><a class="place-card-link" href="place.html?id=${encodeURIComponent(place.id)}"><div><small>${esc(place.distance)} · ${esc(place.scooter)}</small><h2>${esc(place.name)}</h2><p>${esc(place.description)}</p></div></a>${saveButton(place)}</div></article>`;
   const indexCard = place => { const travel = place.scooter.replace(/^Approx\.\s*/, '').replace(/by scooter/, 'away'); return `<article class="place-index-card"><a class="place-index-image" href="place.html?id=${encodeURIComponent(place.id)}"><img loading="lazy" decoding="async" src="${esc(place.image)}" alt="${esc(place.name)}"></a><div class="place-index-copy"><a href="place.html?id=${encodeURIComponent(place.id)}"><h2>${esc(place.name)}</h2></a><p>${esc(place.tag)}</p><div class="place-index-foot"><span>🛵 ${esc(travel)}</span>${saveButton(place)}</div></div></article>`; };
-  const category = document.body.dataset.category;
+  const categoryAliases={breakfast:'cafe',coffee:'cafe',dinner:'restaurant',yoga:'wellness',spa:'wellness'};
+  const category = categoryAliases[document.body.dataset.category] || document.body.dataset.category;
   if (category) { const config = window.TRIPBOOK_CATEGORIES[category]; if (!config) return; document.title = `${config.title} — Bali Tripbook`; document.getElementById('categoryTitle').textContent = config.title; document.getElementById('categoryIntro').textContent = config.intro; document.getElementById('categoryList').innerHTML = places.filter(place => place.category === category).map(card).join(''); wireSaves(document); }
-  const allPlaces = document.getElementById('allPlaces'); if (allPlaces) { allPlaces.innerHTML = places.map(indexCard).join(''); wireSaves(allPlaces); }
+  const allPlaces = document.getElementById('allPlaces'); if (allPlaces) { allPlaces.innerHTML = places.map(indexCard).join(''); const placesCount=document.getElementById('placesCount'); if(placesCount) placesCount.textContent=`${places.length} places`; wireSaves(allPlaces); }
   const detailRoot = document.getElementById('placeDetail');
   if (!detailRoot) return;
   document.body.classList.add('place-page');
