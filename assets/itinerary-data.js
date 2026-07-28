@@ -14,7 +14,7 @@ window.TRIPBOOK_ITINERARY = {
     { day: 1, date: '2026-07-31', title: 'Arrival and Canggu', items: ['12:50 AirAsia AK368 departs KUL', '16:00 arrive DPS', 'Talixo airport pickup', 'Check in to Anasera Villas', 'Mexicola Canggu', 'Atlas Beach Club', 'Return to villa'] },
     { day: 2, date: '2026-08-01', title: 'Canggu and Seminyak', items: ['Breakfast or brunch near villa', 'Spa or massage', 'Lunch', 'La Brisa Market — recheck operating schedule', 'Dinner at Santanera — planned, not reserved', 'La Favela Seminyak'] },
     { day: 3, date: '2026-08-02', title: 'Canggu to Uluwatu', items: ['Breakfast', 'Optional beginner yoga at The Practice Bali', 'Check out', 'Lunch', 'GrabCar to Uluwatu', 'Check in at Lomo Boutique Hotel & Villas', 'Sunset dinner or venue'] },
-    { day: 4, date: '2026-08-03', title: 'Uluwatu', items: ['Still planning', 'Beach / slow lunch / wellness', 'Saltwood Bingin suggested for sunset'] },
+    { day: 4, date: '2026-08-03', title: 'Uluwatu', items: ['Still planning', 'Beach / slow lunch / wellness', 'Saltwood Uluwatu — brunch or sunset dinner (interested)'] },
     { day: 5, date: '2026-08-04', title: 'Seminyak and airport', items: ['Check out of Lomo Boutique Hotel & Villas', 'Kamaria Bags optional', 'Bintang Supermarket', 'Lunch', 'Travel to DPS airport', '16:40 AK369 departs DPS', '19:45 arrive KUL'] }
   ]
 };

@@ -1,5 +1,10 @@
 # Changelog
 
+## v0.6.10 — 2026-07-29
+
+- Corrected Saltwood to Saltwood Uluwatu, an interested brunch or sunset-dinner option.
+- Removed the incorrect yoga and Bingin references.
+
 ## v0.6.9 — 2026-07-29
 
 - Added Cashew Tree, Nourish and Suka Uluwatu as interested Uluwatu café and restaurant options.
