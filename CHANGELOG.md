@@ -1,5 +1,10 @@
 # Changelog
 
+## v0.6.28 — 2026-07-29
+
+- Promoted Santanera to a must-go restaurant with official menu, booking, Instagram and Maps links.
+- Recommended Saturday, 1 Aug (Day 2) for Santanera dinner, while keeping it unreserved.
+
 ## v0.6.27 — 2026-07-29
 
 - Added Teja Uluwatu as an optional, unplanned sunset-dinner choice with live menu, reservation, website, Instagram and Maps links.
