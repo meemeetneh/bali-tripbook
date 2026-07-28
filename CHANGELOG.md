@@ -1,5 +1,10 @@
 # Changelog
 
+## v0.6.9 — 2026-07-29
+
+- Added Cashew Tree, Nourish and Suka Uluwatu as interested Uluwatu café and restaurant options.
+- Left all three unplanned and unreserved, with live-route, menu and hours checks still to do.
+
 ## v0.6.8 — 2026-07-29
 
 - Added Santanera in Canggu as the planned 1 Aug dinner, based on your shared map.
