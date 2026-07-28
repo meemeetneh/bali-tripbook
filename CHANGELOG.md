@@ -1,5 +1,9 @@
 # Changelog
 
+## v0.6.33 — 2026-07-29
+
+- Removed the remaining Home page “Next up” sample card.
+
 ## v0.6.32 — 2026-07-29
 
 - Replaced the Home page’s example itinerary cards with the real Day 1 plan only.
