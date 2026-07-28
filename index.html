@@ -54,6 +54,7 @@ button{cursor:pointer}
 .activity{display:grid;grid-template-columns:52px 1fr;gap:10px;align-items:center}
 .activity-time{font-size:14px;font-weight:650;color:#74757a;text-align:left}
 .activity-card{position:relative;background:#fff;border:1px solid var(--line);border-radius:20px;min-height:78px;padding:12px 46px 12px 88px;display:flex;flex-direction:column;justify-content:center;box-shadow:0 2px 8px rgba(0,0,0,.035)}
+.home-plan-card{padding:14px 18px 14px 26px;min-height:64px}
 .activity-card::before{content:"";position:absolute;left:-18px;top:50%;width:10px;height:10px;border-radius:50%;background:var(--primary);transform:translateY(-50%)}
 .activity-image{position:absolute;left:10px;top:10px;width:60px;height:58px;border-radius:13px;object-fit:cover}
 .activity-title{font-size:16px;font-weight:760;line-height:1.2}
@@ -175,6 +176,7 @@ button{cursor:pointer}
   </div>
 </div>
 <div class="toast" id="toast"></div>
+<script src="assets/itinerary-data.js"></script>
 <script>
 const searchButton=document.getElementById('searchButton');
 const searchOverlay=document.getElementById('searchOverlay');
@@ -184,9 +186,15 @@ searchButton.addEventListener('click',()=>{searchOverlay.classList.add('open');s
 closeSearch.addEventListener('click',()=>searchOverlay.classList.remove('open'));
 searchOverlay.addEventListener('click',e=>{if(e.target===searchOverlay)searchOverlay.classList.remove('open')});
 
+const homeItinerary=document.getElementById('itinerary');
+const todayPlan=window.TRIPBOOK_ITINERARY?.days?.[0];
+if(homeItinerary&&todayPlan){
+  const escapeHtml=value=>String(value).replace(/[&<>"']/g,char=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[char]));
+  homeItinerary.innerHTML=`<div class="section-head"><h2>Day ${todayPlan.day} plan</h2><a class="section-link" href="itinerary.html">View all</a></div><div class="timeline">${todayPlan.items.map(item=>`<div class="activity"><div class="activity-time">Plan</div><article class="activity-card home-plan-card"><div class="activity-title">${escapeHtml(item)}</div><div class="activity-sub">${escapeHtml(todayPlan.title)}</div></article></div>`).join('')}</div>`;
+}
 document.querySelectorAll('.activity-card > button').forEach(btn=>btn.addEventListener('click',()=>btn.parentElement.classList.toggle('expanded')));
 document.querySelectorAll('.explore-item').forEach(btn=>btn.addEventListener('click',()=>location.href='places.html'));
-const seeAll=document.getElementById('seeAll');seeAll.addEventListener('click',()=>{const extra=document.querySelector('.activity.extra');extra.hidden=!extra.hidden;seeAll.textContent=extra.hidden?'See all':'Show less'});
+const seeAll=document.getElementById('seeAll');if(seeAll)seeAll.addEventListener('click',()=>{const extra=document.querySelector('.activity.extra');extra.hidden=!extra.hidden;seeAll.textContent=extra.hidden?'See all':'Show less'});
 let timer;function showToast(message){const t=document.getElementById('toast');t.textContent=message;t.classList.add('show');clearTimeout(timer);timer=setTimeout(()=>t.classList.remove('show'),1500)}
 document.addEventListener('click',e=>{const el=e.target.closest('[data-toast]');if(el)showToast(el.dataset.toast)});
 </script>

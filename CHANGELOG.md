@@ -1,5 +1,10 @@
 # Changelog
 
+## v0.6.32 — 2026-07-29
+
+- Replaced the Home page’s example itinerary cards with the real Day 1 plan only.
+- Added Motel Mexicola Canggu, La Favela Seminyak and Atlas Beach Fest as confirmed must-go nightlife places, with website, Instagram, Maps and their Day 1–2 schedule notes.
+
 ## v0.6.31 — 2026-07-29
 
 - Added The Beach Store in Canggu as the bikini and swimwear shopping stop, with Instagram, Maps and a visible shopping remark.
