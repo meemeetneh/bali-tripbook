@@ -1,5 +1,9 @@
 # Changelog
 
+## v0.6.31 — 2026-07-29
+
+- Added The Beach Store in Canggu as the bikini and swimwear shopping stop, with Instagram, Maps and a visible shopping remark.
+
 ## v0.6.30 — 2026-07-29
 
 - Completed Klive Beach Club with official deck-by-deck spending terms, a seating recommendation for two, lower-cost and premium alternatives, and high-tide guidance.
