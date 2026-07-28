@@ -1,14 +1,15 @@
-# Bali Tripbook Lite v0.5
+# Bali Tripbook v0.6
 
-## Added
-- Installable web app and offline cache
-- Persistent packing/document checklists
-- Share trip button
-- Improved Anasera Villas page
-- Airport pickup details
-- Sensorium, Saltwood and Vasana shortlist cards
-- Google Maps buttons
-- Updated Canggu to Uluwatu itinerary
+Mobile-first, static Bali companion for GitHub Pages.
 
-## Upload
-Unzip and upload/replace all files and folders in the GitHub repository root.
+## Included
+
+- Confirmed Anasera Villas detail page
+- Breakfast, coffee, dinner, yoga and spa category pages
+- Place detail routes with maps, scooter estimates and saved picks
+- Timeline itinerary cards
+- Versioned PWA app-shell cache and runtime image caching
+
+## Publish
+
+Upload the repository contents to the GitHub Pages branch/root. No build step is required.

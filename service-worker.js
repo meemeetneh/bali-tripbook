@@ -1,4 +1,16 @@
-const CACHE='tripbook-v0.5';const FILES=["./index.html", "./places.html", "./itinerary.html", "./picks.html", "./hotels.html", "./flights.html", "./packing.html", "./emergency.html", "./documents.html", "./settings.html", "./about.html", "./assets/site.css", "./assets/site.js", "./sensorium.jpg", "./manifest.webmanifest"];
-self.addEventListener('install',e=>e.waitUntil(caches.open(CACHE).then(c=>c.addAll(FILES))));
-self.addEventListener('activate',e=>e.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(k=>k!==CACHE).map(k=>caches.delete(k))))));
-self.addEventListener('fetch',e=>e.respondWith(caches.match(e.request).then(r=>r||fetch(e.request).then(res=>{const copy=res.clone();caches.open(CACHE).then(c=>c.put(e.request,copy));return res;}).catch(()=>caches.match('./index.html')))));
+const CACHE='tripbook-v0.6-ui2';
+const APP_SHELL=['./','./index.html','./places.html','./place.html','./breakfast.html','./coffee.html','./dinner.html','./yoga.html','./spa.html','./villa.html','./itinerary.html','./picks.html','./hotels.html','./flights.html','./packing.html','./emergency.html','./documents.html','./settings.html','./about.html','./assets/site.css','./assets/site.js','./assets/trip-data.js','./assets/place-pages.js','./sensorium.jpg','./manifest.webmanifest'];
+self.addEventListener('install',event=>event.waitUntil(caches.open(CACHE).then(cache=>cache.addAll(APP_SHELL)).then(()=>self.skipWaiting())));
+self.addEventListener('activate',event=>event.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(key=>key!==CACHE).map(key=>caches.delete(key)))).then(()=>self.clients.claim())));
+self.addEventListener('fetch',event=>{
+  if(event.request.method!=='GET')return;
+  const request=event.request;
+  if(request.mode==='navigate'){
+    event.respondWith(fetch(request).then(response=>{const copy=response.clone();caches.open(CACHE).then(cache=>cache.put(request,copy));return response;}).catch(()=>caches.match(request).then(hit=>hit||caches.match('./index.html'))));
+    return;
+  }
+  event.respondWith(caches.match(request).then(hit=>{
+    const update=fetch(request).then(response=>{if(response&&response.status<400){const copy=response.clone();caches.open(CACHE).then(cache=>cache.put(request,copy));}return response;});
+    return hit||update.catch(()=>request.destination==='image'?new Response('',{status:504,statusText:'Offline'}):caches.match('./index.html'));
+  }));
+});

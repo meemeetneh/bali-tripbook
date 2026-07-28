@@ -132,7 +132,7 @@ button{cursor:pointer}
     </section>
 
     <section class="section">
-      <div class="section-head"><h2>Explore</h2><button class="section-link" data-toast="All categories opened" style="border:0;background:transparent">View all</button></div>
+      <div class="section-head"><h2>Explore</h2><a class="section-link" href="places.html">View all</a></div>
       <div class="explore-grid">
         <button class="explore-item active"><div class="explore-icon"><svg viewBox="0 0 24 24"><path d="M4 8h11v6a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5Z"/><path d="M15 10h2a3 3 0 0 1 0 6h-2M7 3v2M11 3v2"/></svg></div><span>Cafés</span></button>
         <button class="explore-item"><div class="explore-icon"><svg viewBox="0 0 24 24"><path d="M7 3v8M4 3v5a3 3 0 0 0 6 0V3M7 11v10M16 3c3 0 4 4 4 7v2h-4V3Zm0 9v9"/></svg></div><span>Food</span></button>
@@ -185,7 +185,7 @@ closeSearch.addEventListener('click',()=>searchOverlay.classList.remove('open'))
 searchOverlay.addEventListener('click',e=>{if(e.target===searchOverlay)searchOverlay.classList.remove('open')});
 
 document.querySelectorAll('.activity-card > button').forEach(btn=>btn.addEventListener('click',()=>btn.parentElement.classList.toggle('expanded')));
-document.querySelectorAll('.explore-item').forEach(btn=>btn.addEventListener('click',()=>{document.querySelectorAll('.explore-item').forEach(x=>x.classList.remove('active'));btn.classList.add('active');showToast(btn.textContent.trim()+' selected')}));
+document.querySelectorAll('.explore-item').forEach(btn=>btn.addEventListener('click',()=>location.href='places.html'));
 const seeAll=document.getElementById('seeAll');seeAll.addEventListener('click',()=>{const extra=document.querySelector('.activity.extra');extra.hidden=!extra.hidden;seeAll.textContent=extra.hidden?'See all':'Show less'});
 let timer;function showToast(message){const t=document.getElementById('toast');t.textContent=message;t.classList.add('show');clearTimeout(timer);timer=setTimeout(()=>t.classList.remove('show'),1500)}
 document.addEventListener('click',e=>{const el=e.target.closest('[data-toast]');if(el)showToast(el.dataset.toast)});
