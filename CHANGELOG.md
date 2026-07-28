@@ -1,5 +1,9 @@
 # Changelog
 
+## v0.6.34 — 2026-07-29
+
+- Added 32do Bali as an interested Petitenget / Seminyak café, with links, hours, price guidance and what to look for.
+
 ## v0.6.33 — 2026-07-29
 
 - Removed the remaining Home page “Next up” sample card.
