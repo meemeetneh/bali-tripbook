@@ -1,5 +1,10 @@
 # Changelog
 
+## v0.6.29 — 2026-07-29
+
+- Added Klive Beach Club as a must-go Uluwatu beach club with official menu, reservation, Instagram and Maps links.
+- Recommended Sunday, 2 Aug (Day 3) after hotel check-in for sunset and dinner, leaving Day 4 clear for Ømbae yoga.
+
 ## v0.6.28 — 2026-07-29
 
 - Promoted Santanera to a must-go restaurant with official menu, booking, Instagram and Maps links.
