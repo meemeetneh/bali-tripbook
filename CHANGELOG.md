@@ -1,5 +1,9 @@
 # Changelog
 
+## v0.6.27 — 2026-07-29
+
+- Added Teja Uluwatu as an optional, unplanned sunset-dinner choice with live menu, reservation, website, Instagram and Maps links.
+
 ## v0.6.26 — 2026-07-29
 
 - Corrected Club Pantai as the Uluwatu souvenir-shopping stop.
