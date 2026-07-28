@@ -1,5 +1,17 @@
 # Changelog
 
+## v0.6.7 — 2026-07-29
+
+- Marked the 2–4 Aug Uluwatu stay as confirmed and added non-sensitive room and timing details.
+- Kept confirmation files, booking and reference IDs, payment details and personal information out of Tripbook.
+
+## v0.6.6 — 2026-07-29
+
+- Synced the 31 Jul–4 Aug 2026 itinerary from the Tripbook handoff source.
+- Added all five itinerary days, confirmed AirAsia AK368 and AK369 schedules, and the confirmed Talixo arrival transfer.
+- Updated stays, transport guidance and travel documents while keeping booking references and ticket details private.
+- Versioned the offline cache to include the synced itinerary data and renderer.
+
 ## v0.6.5 — 2026-07-29
 
 - Completed the locked Airbnb Cereal visual system across Hotels, Flights, Travel Docs, Packing, Emergency and My Picks.

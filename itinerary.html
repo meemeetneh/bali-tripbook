@@ -5,9 +5,9 @@
   <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
   <meta name="theme-color" content="#ffffff">
   <title>Itinerary — Bali Tripbook</title>
-  <link rel="stylesheet" href="assets/site.css?airbnb=5">
+  <link rel="stylesheet" href="assets/site.css?itinerary=1">
+  <link rel="stylesheet" href="assets/airbnb-system.css?itinerary=1">
   <link rel="manifest" href="manifest.webmanifest">
-  <style>*{box-sizing:border-box}body{margin:0;font-family:"Inter",-apple-system,BlinkMacSystemFont,"Helvetica Neue",Arial,sans-serif}</style>
 </head>
 <body class="itinerary-page">
   <div class="subpage-app">
@@ -17,73 +17,22 @@
         <div class="itinerary-header-actions"><button type="button" aria-label="Search itinerary">⌕</button><button type="button" id="subMenuButton" aria-label="Open menu">⋮</button></div>
       </div>
     </header>
-
     <main class="sub-content">
-      <div class="day-strip" aria-label="Trip days">
-        <button class="day-chip active"><span>Fri</span><strong>31</strong><small>Jul</small></button>
-        <button class="day-chip"><span>Sat</span><strong>1</strong><small>Aug</small></button>
-        <button class="day-chip"><span>Sun</span><strong>2</strong><small>Aug</small></button>
-        <button class="day-chip"><span>Mon</span><strong>3</strong><small>Aug</small></button>
-        <button class="day-chip"><span>Tue</span><strong>4</strong><small>Aug</small></button>
-      </div>
-
-      <div class="timeline">
-        <article class="timeline-item">
-          <div class="activity-time">08:30</div>
-          <div class="timeline-copy"><div class="timeline-card">
-            <img src="sensorium.jpg" alt="Breakfast at Sensorium Bali" loading="lazy">
-            <div><h3>Breakfast at Sensorium Bali</h3>
-            <div class="timeline-meta"><span>☕ Breakfast</span><span>🛵 11 min away</span></div></div><button class="activity-more" aria-label="More options for Breakfast at Sensorium Bali">⋮</button>
-            <div class="detail-list"><div class="detail-row"><span>Duration</span><strong>1–1.5 hr</strong></div><div class="detail-row"><span>Travel</span><strong>Approx. 11 min by scooter</strong></div><div class="detail-row"><span>Notes</span><strong>Check weekend hours before leaving</strong></div></div>
-            <a class="action-link primary" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=Sensorium+Bali+Canggu">Open Maps</a>
-          </div></div>
-        </article>
-        <article class="timeline-item">
-          <div class="activity-time">13:00</div>
-          <div class="timeline-copy"><div class="timeline-card">
-            <img src="sensorium.jpg" alt="Beach time at La Brisa" loading="lazy">
-            <div><h3>Beach time at La Brisa</h3>
-            <div class="timeline-meta"><span>☀️ Beach club</span><span>🛵 Check live route</span></div></div><button class="activity-more" aria-label="More options for Beach time at La Brisa">⋮</button>
-            <div class="detail-list"><div class="detail-row"><span>Duration</span><strong>Flexible</strong></div><div class="detail-row"><span>Travel</span><strong>Check Google Maps before leaving</strong></div><div class="detail-row"><span>Notes</span><strong>Bring swimwear and a light cover-up</strong></div></div>
-            <a class="action-link primary" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=La+Brisa+Bali">Open Maps</a>
-          </div></div>
-        </article>
-        <article class="timeline-item">
-          <div class="activity-time">17:45</div>
-          <div class="timeline-copy"><div class="timeline-card">
-            <img src="sensorium.jpg" alt="Dinner in Pererenan" loading="lazy">
-            <div><h3>Dinner in Pererenan</h3>
-            <div class="timeline-meta"><span>🍽️ Dinner</span><span>🛵 6 min away</span></div></div><button class="activity-more" aria-label="More options for Dinner in Pererenan">⋮</button>
-            <div class="detail-list"><div class="detail-row"><span>Duration</span><strong>1.5–2 hr</strong></div><div class="detail-row"><span>Travel</span><strong>Approx. 6 min by scooter</strong></div><div class="detail-row"><span>Notes</span><strong>Book before heading out</strong></div></div>
-            <a class="action-link primary" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=Shelter+Pererenan+Bali">Open Maps</a>
-          </div></div>
-        </article>
-        <article class="timeline-item">
-          <div class="activity-time">Any time</div>
-          <div class="timeline-copy"><div class="timeline-card">
-            <img src="sensorium.jpg" alt="Airport pickup and villa check-in" loading="lazy">
-            <div><h3>Airport pickup &amp; villa check-in</h3>
-            <div class="timeline-meta"><span>✈️ Arrival</span><span>🚗 Included pickup</span></div></div><button class="activity-more" aria-label="More options for Airport pickup and villa check-in">⋮</button>
-            <div class="detail-list"><div class="detail-row"><span>Duration</span><strong>Allow 60–90 min</strong></div><div class="detail-row"><span>Travel</span><strong>Airport pickup included</strong></div><div class="detail-row"><span>Notes</span><strong>Share verified flight details with host</strong></div></div>
-            <a class="action-link primary" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=Anasera+Villas+Echo+Beach+Canggu">Open Maps</a>
-          </div></div>
-        </article>
-      </div>
+      <div class="day-strip" id="dayStrip" aria-label="Trip days"></div>
+      <h2 class="itinerary-day-title" id="selectedDayTitle"></h2>
+      <div class="timeline" id="itineraryTimeline" aria-live="polite"></div>
     </main>
-
     <nav class="tabbar" aria-label="Primary navigation">
       <a class="tab" href="index.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m3 10 9-7 9 7v10a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1Z"/><path d="M9 21v-6h6v6"/></svg><span>Home</span></a>
       <a class="tab" href="places.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.4"/></svg><span>Places</span></a>
-      <a class="tab active" href="itinerary.html"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M7 3v4M17 3v4M3 10h18M8 14h.01M12 14h.01M16 14h.01M8 18h.01M12 18h.01"/></svg><span>Itinerary</span></a>
+      <a class="tab active" href="itinerary.html"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M7 3v4M17 3v4M3 10h18"/></svg><span>Itinerary</span></a>
       <a class="tab" href="picks.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.9-8.6a5.5 5.5 0 0 0-.1-7.8Z"/></svg><span>My Picks</span></a>
     </nav>
   </div>
-
   <div class="menu-backdrop" id="menuBackdrop"></div>
-  <aside class="side-menu" id="sideMenu" aria-hidden="true">
-    <div class="side-menu-head"><div><span>Bali Tripbook</span><strong>Trip menu</strong></div><button id="closeMenu" aria-label="Close menu">×</button></div>
-    <nav><a href="hotels.html">🏨 Hotels</a><a href="flights.html">✈️ Flights</a><a href="packing.html">🎒 Packing List</a><a href="emergency.html">＋ Emergency</a><a href="documents.html">▤ Travel Documents</a><a href="settings.html">⚙️ Settings</a><a href="about.html">ⓘ About</a></nav>
-  </aside>
+  <aside class="side-menu" id="sideMenu" aria-hidden="true"><div class="side-menu-head"><div><span>Bali Tripbook</span><strong>Trip menu</strong></div><button id="closeMenu" aria-label="Close menu">×</button></div><nav><a href="hotels.html">🏨 Hotels</a><a href="flights.html">✈️ Flights</a><a href="packing.html">🎒 Packing List</a><a href="emergency.html">＋ Emergency</a><a href="documents.html">▤ Travel Documents</a><a href="settings.html">⚙️ Settings</a><a href="about.html">ⓘ About</a></nav></aside>
+  <script src="assets/itinerary-data.js"></script>
   <script src="assets/site.js"></script>
+  <script src="assets/itinerary-page.js"></script>
 </body>
 </html>

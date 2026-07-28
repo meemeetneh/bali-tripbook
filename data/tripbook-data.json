@@ -1,0 +1,200 @@
+{
+  "project": {
+    "name": "Bali Tripbook",
+    "repository": "https://github.com/meemeetneh/bali-tripbook",
+    "hosting": "GitHub Pages",
+    "design": {
+      "reference": "Follow the uploaded Airbnb-style mobile UI references exactly",
+      "font": "Inter",
+      "accent": "#FF6B5E",
+      "background": "#FFFFFF",
+      "surface": "#F7F7F7",
+      "text_primary": "#111111",
+      "text_secondary": "#717171",
+      "border": "#ECECEC",
+      "rules": [
+        "Mobile-first, iPhone 16 Pro first",
+        "Rounded cards",
+        "Minimal shadows",
+        "No gradients",
+        "No unnecessary decoration",
+        "Do not redesign without instruction"
+      ]
+    }
+  },
+  "trip": {
+    "start": "2026-07-31",
+    "end": "2026-08-04",
+    "duration": "5 days / 4 nights",
+    "travellers": "2 adults",
+    "transport": ["GrabCar", "GrabBike", "Gojek"],
+    "no_scooter": true
+  },
+  "flights": [
+    {
+      "type": "outbound",
+      "airline": "AirAsia",
+      "flight": "AK368",
+      "date": "2026-07-31",
+      "from": "KUL",
+      "to": "DPS",
+      "departure": "12:50",
+      "arrival": "16:00",
+      "status": "confirmed"
+    },
+    {
+      "type": "return",
+      "airline": "AirAsia",
+      "flight": "AK369",
+      "date": "2026-08-04",
+      "from": "DPS",
+      "to": "KUL",
+      "departure": "16:40",
+      "arrival": "19:45",
+      "status": "confirmed"
+    }
+  ],
+  "airport_transfer": {
+    "provider": "Talixo",
+    "date": "2026-07-31",
+    "pickup": "DPS Airport",
+    "destination": "Anasera Villas Echo Beach Canggu",
+    "price": "FREE",
+    "flight_tracking": true,
+    "status": "confirmed",
+    "privacy": "Do not publish confirmation number on the public site"
+  },
+  "hotels": [
+    {
+      "name": "Anasera Villas Echo Beach Canggu",
+      "area": "Pererenan / Canggu",
+      "check_in": "2026-07-31",
+      "check_out": "2026-08-02",
+      "room": "One Bedroom Villa",
+      "total": "MYR 814",
+      "status": "confirmed",
+      "address": "Jl. Munduk Kedungu No.89, Pererenan, Bali 80351",
+      "phone": "+62 823 2284 3759"
+    },
+    {
+      "name": "Lomo Boutique Hotel & Villas",
+      "area": "Uluwatu",
+      "check_in": "2026-08-02",
+      "check_out": "2026-08-04",
+      "room": "Junior Suite with Bathtub",
+      "status": "confirmed",
+      "check_in_time": "14:00",
+      "check_out_time": "12:30",
+      "amenities": ["Parking", "Free WiFi", "Coffee & tea", "Drinking water"],
+      "privacy": "Do not publish booking or reference IDs, payment details, confirmation files or personal information"
+    }
+  ],
+  "itinerary": [
+    {
+      "day": 1,
+      "date": "2026-07-31",
+      "title": "Arrival and Canggu",
+      "items": [
+        "12:50 AirAsia AK368 departs KUL",
+        "16:00 arrive DPS",
+        "Talixo airport pickup",
+        "Check in to Anasera Villas",
+        "Mexicola Canggu",
+        "Atlas Beach Club",
+        "Return to villa"
+      ]
+    },
+    {
+      "day": 2,
+      "date": "2026-08-01",
+      "title": "Canggu and Seminyak",
+      "items": [
+        "Breakfast or brunch near villa",
+        "Spa or massage",
+        "Lunch",
+        "La Brisa Market — recheck operating schedule",
+        "Dinner",
+        "La Favela Seminyak"
+      ]
+    },
+    {
+      "day": 3,
+      "date": "2026-08-02",
+      "title": "Canggu to Uluwatu",
+      "items": [
+        "Breakfast",
+        "Optional beginner yoga at The Practice Bali",
+        "Check out",
+        "Lunch",
+        "GrabCar to Uluwatu",
+        "Check in at Lomo Boutique Hotel & Villas",
+        "Sunset dinner or venue"
+      ]
+    },
+    {
+      "day": 4,
+      "date": "2026-08-03",
+      "title": "Uluwatu",
+      "items": [
+        "Still planning",
+        "Beach / slow lunch / wellness",
+        "Saltwood Bingin suggested for sunset"
+      ]
+    },
+    {
+      "day": 5,
+      "date": "2026-08-04",
+      "title": "Seminyak and airport",
+      "items": [
+        "Check out of Lomo Boutique Hotel & Villas",
+        "Kamaria Bags optional",
+        "Bintang Supermarket",
+        "Lunch",
+        "Travel to DPS airport",
+        "16:40 AK369 departs DPS",
+        "19:45 arrive KUL"
+      ]
+    }
+  ],
+  "shortlists": {
+    "near_villa_food": [
+      { "name": "LOOP Café", "distance": "≈0.8 km", "score": 9.8 },
+      { "name": "7AM Bakers", "distance": "≈0.9 km" },
+      { "name": "Hippie Fish", "distance": "≈0.9 km" },
+      { "name": "nüde Café Pererenan", "distance": "≈1.4 km" },
+      { "name": "Artisan Bakery", "distance": "≈1.4 km" },
+      { "name": "Shortcut Café", "distance": "≈1.5 km" },
+      { "name": "Machinery Coffee & Eatery", "distance": "≈1.6 km" },
+      { "name": "Brunch Club Pererenan", "distance": "≈1.8 km" },
+      { "name": "Roots", "distance": "≈2.0 km" },
+      { "name": "Optimist Bali", "distance": "≈2.1 km" },
+      { "name": "Shelter Restaurant", "distance": "≈2.2 km" },
+      { "name": "Riviera Trattoria", "distance": "≈2.4 km" }
+    ],
+    "near_villa_wellness": [
+      { "name": "The Practice Bali", "distance": "≈0.9 km", "recommendation": "Level 1 Hatha Yoga Moon; second choice Yin Yoga" },
+      { "name": "Nikara Spa", "distance": "≈1.8 km" },
+      { "name": "Spring Spa Canggu", "distance": "≈2.3 km" },
+      { "name": "Tonic Massage & Botanicals", "distance": "≈2.7 km" },
+      { "name": "Sundari Wellness Pererenan", "distance": "≈2.8 km" }
+    ],
+    "other": ["Mexicola Canggu", "Atlas Beach Club", "La Favela Seminyak", "La Brisa Market", "Saltwood Bingin", "Single Fin Bali", "MÛ Boutique Resort / Bungalows", "Kamaria Bags", "Bintang Supermarket", "Beachwalk Shopping Center"],
+    "removed": [{ "name": "Sun & Surf Stay", "reason": "Closed" }]
+  },
+  "preferences": {
+    "prefer": ["calm", "authentic Bali", "premium", "natural", "wellness", "meditation", "traditional ambience", "designer aesthetics"],
+    "avoid": ["fitness-style yoga", "pop music yoga background", "scooter rental"]
+  },
+  "privacy": [
+    "Do not publish booking PINs, booking references, QR codes, full eTickets, passport details or transfer confirmation numbers",
+    "Use redacted previews only on the public site"
+  ],
+  "verification_required": [
+    "opening hours",
+    "operating days",
+    "prices",
+    "reservation policies",
+    "distances",
+    "Grab times"
+  ]
+}
