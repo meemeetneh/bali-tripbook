@@ -1,13 +1,12 @@
-# Bali Tripbook Lite v0.3
+# Bali Tripbook Lite v0.4
 
-This release restores the previously approved Tripbook home interface.
+## Added
+- Functional Places page
+- Functional Itinerary page
+- My Picks saved locally on the device
+- Correct four-item bottom navigation
+- Slide-out menu
+- Hotels, Flights, Packing, Emergency, Travel Documents, Settings and About pages
 
-## Upload to GitHub
-Unzip this package and upload/replace the files in the repository root:
-
-- index.html
-- sensorium.jpg
-- .nojekyll
-- README.md
-
-Do not upload the outer ZIP file itself.
+## Upload
+Unzip and upload/replace every file and folder inside `Tripbook-Lite-v0.4` in the GitHub repository root.

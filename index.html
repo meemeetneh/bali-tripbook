@@ -88,13 +88,14 @@ button{cursor:pointer}
 .close-search{border:0;background:#f2f2f4;border-radius:14px;padding:0 14px;font-weight:750}
 @media (max-width:370px){.header h1{font-size:33px}.section-head h2{font-size:23px}.next-card{grid-template-columns:1fr 104px}.next-image{width:104px;height:142px}.explore-grid{gap:8px}.explore-item span{font-size:10px}}
 </style>
-  <meta name="tripbook-version" content="0.3">
+  <meta name="tripbook-version" content="0.4">
+<link rel="stylesheet" href="assets/site.css">
 </head>
 <body>
 <div class="app">
   <header class="header">
     <div class="header-top">
-      <div class="menu-icon" aria-label="Menu"><span></span><span></span><span></span></div>
+      <button class="menu-icon menu-button" id="menuButton" aria-label="Open menu"><span></span><span></span><span></span></button>
       <button class="search-btn" id="searchButton" aria-label="Search">
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-3.4-3.4"></path></svg>
       </button>
@@ -142,13 +143,30 @@ button{cursor:pointer}
   </main>
 
   <nav class="tabbar" aria-label="Primary navigation">
-    <a class="tab active" href="#top"><svg viewBox="0 0 24 24"><path d="m3 10 9-7 9 7v10h-6v-6H9v6H3Z"/></svg><span>Home</span></a>
-    <button class="tab" data-toast="Places screen coming next"><svg viewBox="0 0 24 24"><path d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></svg><span>Places</span></button>
-    <button class="tab" data-toast="Itinerary screen coming next"><svg viewBox="0 0 24 24"><rect x="4" y="5" width="16" height="15" rx="2"/><path d="M8 3v4M16 3v4M4 10h16"/></svg><span>Itinerary</span></button>
-    <button class="tab" data-toast="Maps screen coming next"><svg viewBox="0 0 24 24"><path d="m3 6 6-3 6 3 6-3v15l-6 3-6-3-6 3Z"/><path d="M9 3v15M15 6v15"/></svg><span>Maps</span></button>
-    <button class="tab" data-toast="Trip screen coming next"><svg viewBox="0 0 24 24"><rect x="5" y="7" width="14" height="13" rx="2"/><path d="M9 7V5h6v2M8 12h8"/></svg><span>Trip</span></button>
+    <a class="tab active" href="index.html"><svg viewBox="0 0 24 24"><path d="m3 10 9-7 9 7v10h-6v-6H9v6H3Z"/></svg><span>Home</span></a>
+    <a class="tab" href="places.html"><svg viewBox="0 0 24 24"><path d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></svg><span>Places</span></a>
+    <a class="tab" href="itinerary.html"><svg viewBox="0 0 24 24"><rect x="4" y="5" width="16" height="15" rx="2"/><path d="M8 3v4M16 3v4M4 10h16"/></svg><span>Itinerary</span></a>
+    <a class="tab" href="picks.html"><svg viewBox="0 0 24 24"><path d="M12 21s-7-4.4-7-10a4 4 0 0 1 7-2.7A4 4 0 0 1 19 11c0 5.6-7 10-7 10Z"/></svg><span>My Picks</span></a>
   </nav>
 </div>
+
+
+<div class="menu-backdrop" id="menuBackdrop"></div>
+<aside class="side-menu" id="sideMenu" aria-hidden="true">
+  <div class="side-menu-head">
+    <div><span>Bali Tripbook</span><strong>Trip menu</strong></div>
+    <button id="closeMenu" aria-label="Close menu">×</button>
+  </div>
+  <nav>
+    <a href="hotels.html">🏨 <span>Hotels</span></a>
+    <a href="flights.html">✈️ <span>Flights</span></a>
+    <a href="packing.html">🎒 <span>Packing List</span></a>
+    <a href="emergency.html">＋ <span>Emergency</span></a>
+    <a href="documents.html">▤ <span>Travel Documents</span></a>
+    <a href="settings.html">⚙️ <span>Settings</span></a>
+    <a href="about.html">ⓘ <span>About</span></a>
+  </nav>
+</aside>
 
 <div class="search-overlay" id="searchOverlay">
   <div class="search-panel">
@@ -171,5 +189,6 @@ const seeAll=document.getElementById('seeAll');seeAll.addEventListener('click',(
 let timer;function showToast(message){const t=document.getElementById('toast');t.textContent=message;t.classList.add('show');clearTimeout(timer);timer=setTimeout(()=>t.classList.remove('show'),1500)}
 document.addEventListener('click',e=>{const el=e.target.closest('[data-toast]');if(el)showToast(el.dataset.toast)});
 </script>
+<script src="assets/site.js"></script>
 </body>
 </html>
