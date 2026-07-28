@@ -1,5 +1,9 @@
 # Changelog
 
+## v0.6.36 — 2026-07-29
+
+- Added Marissa Spa Canggu as the lower-cost massage and spa alternative, with branch, WhatsApp, website, Instagram and value-planning details.
+
 ## v0.6.35 — 2026-07-29
 
 - Promoted Spring Spa Bali to a confirmed must-go wellness place, with Canggu and Uluwatu branch guidance, official links, booking details and the latest publicly verifiable treatment-price snapshot.
