@@ -1,5 +1,9 @@
 # Changelog
 
+## v0.6.38 — 2026-07-31
+
+- Added FLEUR Café & Artist Atelier in Bingin as an interested Uluwatu café stop with Instagram, Maps, hours and planning notes.
+
 ## v0.6.37 — 2026-07-29
 
 - Reworked the Home and full Itinerary timelines with meaningful times, individual titles and specific descriptions for every trip stop.
