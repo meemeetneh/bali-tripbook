@@ -1,5 +1,9 @@
 # Changelog
 
+## v0.6.39 — 2026-07-31
+
+- Added Crate Café Canggu as an interested breakfast and brunch place, with its location, website, Instagram and planning notes.
+
 ## v0.6.38 — 2026-07-31
 
 - Added FLEUR Café & Artist Atelier in Bingin as an interested Uluwatu café stop with Instagram, Maps, hours and planning notes.
