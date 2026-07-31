@@ -1,5 +1,10 @@
 # Changelog
 
+## v0.6.40 — 2026-07-31
+
+- Added Te’Amo Gastro-Bistro, The Avocado Factory and Ulekan Berawa, with official links and the food notes from your photos.
+- Added Santanera’s corn-cake and octopus recommendation to its must-go restaurant note.
+
 ## v0.6.39 — 2026-07-31
 
 - Added Crate Café Canggu as an interested breakfast and brunch place, with its location, website, Instagram and planning notes.
